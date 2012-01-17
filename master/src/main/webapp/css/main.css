@@ -1,0 +1,304 @@
+@CHARSET "ISO-8859-1";
+
+/* Overlay */
+
+.yui3-overlay-mask {
+
+    background: #000;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+
+.yui3-overlay {
+	background: rgba(60,60,60,0.9);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 10px;
+	
+}
+
+.yui3-overlay-content {
+	background: rgba(183,221,232,0.9);
+}
+
+.yui3-widget-hd {
+	background: rgba(33,89,104,0.9);
+}
+
+.yui3-widget-bd {
+	margin: 10px;
+}
+
+.yui3-widget-ft {
+}
+
+.smaad .progressTitle {
+	font-size: large;
+	text-align: center;
+}
+
+	
+.smaad .progressOverlay {
+	background: rgba(183,221,232,0.9);
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 10px;
+}
+
+/* Content */
+
+.smaad .sectionTitle {
+
+	background: rgb(33,89,104);
+	color: rgb(183,221,232);
+	font-weight: bold;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+		
+}
+
+a {
+
+	color: rgb(183,221,232);
+	cursor: pointer; 
+}
+
+.smaad .sectionContent {
+
+	background: rgb(183,221,232);
+	color: rgb(33,89,104);
+	border: thin;
+	border-style: solid;
+	border-color: rgb(33,89,104);
+	padding: 2px;
+}
+
+.smaad .searchResult:HOVER {
+	background: rgb(163,201,212);
+}
+
+.smaad .selectedConcept:HOVER {
+	background: rgb(163,201,212);
+}
+
+.smaad .conceptName {
+	font-weight: bold;
+	margin-top: 5px;
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.smaad .conceptPropertyDiv {
+	margin-left:30px;
+}
+
+.smaad .conceptPropertyName {
+	font-weight: bold;
+	margin-left: -20px;
+}
+
+.smaad .conceptPropertyValue {
+}
+
+.conceptDescription {
+	font-style: italic;
+	margin-left: 10px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+tbody {
+	vertical-align: top;
+}
+
+.smaad .searchDiv {
+	vertical-align: center;
+}
+
+.smaad .sectionContent.error {
+	background: rgb(255,200,200);
+	color: red;
+}
+
+.smaad .section {
+	border: thin;
+	border-style: solid;
+	border-color: rgb(33,89,104);
+}
+
+.smaad .sectionContentTitle {
+
+	background: rgb(183,221,232);
+	color: rgb(33,89,104);
+	font-weight: bold;
+		
+}
+
+.smaad .button {
+
+	background: rgb(33,89,104);
+	color: rgb(183,221,232);
+	background-image: none;
+	padding: 5px;
+	border-style: solid;
+	border-color: black;
+	/** CSS 3 */
+	border-radius: 5px;
+	/** Firefox */
+	-moz-border-radius: 5px;
+	/** Safari */
+	-webkit-border-radius:5px;
+	border: thin;
+	margin: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline-block;
+		
+}
+
+.smaad .smallButton {
+	background: rgb(33,89,104);
+	color: rgb(183,221,232);
+	border-style: hidden;
+	border: 2px;
+	font-weight: bold;
+	text-decoration: none;
+		/** CSS 3 */
+	border-radius: 2px;
+	/** Firefox */
+	-moz-border-radius: 2px;
+	/** Safari */
+	-webkit-border-radius: 2px;
+	padding-left: 3px;
+	padding-right: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	text-align: center;
+	display: inline-block;
+}
+
+.smaad .button:HOVER {
+
+	background: rgb(33,89,104);
+	color: rgb(183,221,232);
+	background-image: none;
+	
+}
+
+.smaad .button:ACTIVE {
+
+	background: rgb(33,89,104);
+	color: rgb(183,221,232);
+	background-image: none;
+	
+		
+}
+
+
+
+.smaad .mainTable {
+	background: #dce6f2;
+	border-spacing: 20px;
+	border-collapse: separate;
+	vertical-align: top;
+	height: 100%
+}
+
+.smaad .mainTable TD {
+}
+
+.smaad .fileTable {
+	border-width:1px;
+	border-style:solid;
+	padding:5px;
+	width: 100%;
+	border-collapse: separate;
+}
+
+.smaad .fileTable TH {
+	border-bottom-style: solid;
+	border-bottom-width: thin;
+	border-bottom-color: rgb(33,89,104);
+}
+
+.smaad .fileTable TR {
+	vertical-align: top;
+}
+
+.smaad .fileTable TR+TR:HOVER {
+	background: rgb(163,201,212);
+}
+
+.smaad .fileTable TD {
+	padding-left: 5px;
+	padding-right: 5px;
+	border-bottom: thin dotted;
+}
+
+.smaad .fileStatus {
+	font-weight: bold;
+}
+
+.smaad .fileStatus.error {
+	color: red;
+}
+
+.smaad .fileStatus.error a {
+	color: red;
+}
+
+
+.smaad .searchingDiv {
+	vertical-align: middle;
+	color: gray;
+}
+
+.yui3-progressbar {
+	margin: 10px;
+/*	width:100px;*/
+	height:10px;
+	
+	top: 1px;
+	
+	/*margin-bottom:3px;*/
+	border: 1px solid rgb(33,89,104);
+	
+	background: rgb(133,189,204);
+}
+
+.yui3-progressbar .yui3-progressbar-label {
+	whidth: 100px;
+	font-size:8px;
+	position:absolute;
+	top: 0px;
+	left: 5px;
+	z-index: 3;
+	color: rgb(183,221,232);
+	height: 10px;
+	display: none;
+}
+
+.yui3-progressbar .yui3-progressbar-content {
+	position:relative;
+	height:10px;
+	whidth: 100px;
+	background:url('assets/active.gif') left center no-repeat;
+	z-index: 1;
+}
+
+.yui3-progressbar .yui3-progressbar-slider {
+	height:10px;
+	whidth: 100px;
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	background: rgb(33,89,104);
+	z-index: 2;
+}
+

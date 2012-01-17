@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="smaad_proto" version="2.4"
+         xmlns="http://java.sun.com/xml/ns/j2ee"
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>SMAAD Semantic Editor</display-name>
+	<servlet>
+		<description>
+		</description>
+		<display-name>SemanticAnnotationService</display-name>
+		<servlet-name>SemanticAnnotationService</servlet-name>
+		<servlet-class>com.erdas.projects.smaad.annotation.service.SemanticAnnotationService</servlet-class>
+		<init-param>
+			<param-name>VOID_URL</param-name>
+			<param-value>http://projects-eu.erdas.com/smaad-annotation-core/data/void.rdf</param-value>
+		</init-param>
+		<init-param>
+			<param-name>XSD_VALIDATION</param-name>
+			<param-value>true</param-value>
+		</init-param>
+		<init-param>
+			<param-name>SCHEMATRON_VALIDATION</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SemanticAnnotationService</servlet-name>
+		<url-pattern>/service</url-pattern>
+	</servlet-mapping>
+
+</web-app>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE WMT_MS_Capabilities SYSTEM "http://apollopro.erdas.com:80/erdas-apollo/coverage/ATLANTA_SINGLE/REQUEST/getdir/DIR/BASE/DATA/LPR/wms/1.0.0/WMS__MS__Capabilities.dtd" [
+<!ELEMENT VendorSpecificCapabilities (PreferredFormat?)>
+<!ATTLIST VendorSpecificCapabilities version CDATA #REQUIRED>
+<!ELEMENT PreferredFormat (Format,refresh?,SRS?,supportDataSrs?,supportedInterfaces?)>
+<!ELEMENT refresh EMPTY >
+<!ATTLIST refresh rate CDATA #REQUIRED>
+<!ELEMENT supportDataSrs EMPTY >
+<!ELEMENT supportedInterfaces (#PCDATA)>
+]>
+<WMT_MS_Capabilities version="1.0.0" updateSequence="0">
+  <Service>
+    <Name>OGC:WCS</Name>
+    <Title>Atlanta Coverage Server</Title>
+    <Abstract>City of Atlanta ECW imagery</Abstract>
+    <OnlineResource>http://apollopro.erdas.com:80/erdas-apollo/coverage/ATLANTA_SINGLE?</OnlineResource>
+  </Service>
+  <Capability>
+    <Request>
+      <Capabilities>
+        <Format>
+          <WMS_XML/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://apollopro.erdas.com:80/erdas-apollo/coverage/ATLANTA_SINGLE?"/>
+          </HTTP>
+        </DCPType>
+      </Capabilities>
+      <Map>
+        <Format>
+          <PNG/>
+          <GIF/>
+          <JPEG/>
+          <GeoTIFF/>
+          <TIFF/>
+          <WBMP/>
+          <SVG/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://apollopro.erdas.com:80/erdas-apollo/coverage/ATLANTA_SINGLE?"/>
+          </HTTP>
+        </DCPType>
+      </Map>
+      <FeatureInfo>
+        <Format>
+          <WMS_XML/>
+        </Format>
+        <DCPType>
+          <HTTP>
+            <Get onlineResource="http://apollopro.erdas.com:80/erdas-apollo/coverage/ATLANTA_SINGLE?"/>
+          </HTTP>
+        </DCPType>
+      </FeatureInfo>
+    </Request>
+    <Exception>
+      <Format>
+        <INIMAGE/>
+        <BLANK/>
+        <WMS_XML/>
+      </Format>
+    </Exception>
+    <VendorSpecificCapabilities version="4">
+      <PreferredFormat>
+        <Format>
+          <PNG/>
+          <PNG8/>
+          <GIF/>
+          <JPEG/>
+          <GeoTIFF/>
+          <TIFF/>
+          <BMP/>
+        </Format>
+        <supportedInterfaces>WCS,WMS,WCSFlag</supportedInterfaces>
+      </PreferredFormat>
+    </VendorSpecificCapabilities>
+    <Layer>
+      <Title>Atlanta Coverage Server</Title>
+      <LatLonBoundingBox minx="-84.4478251501018" miny="33.7854904668446" maxx="-84.43215959675469" maxy="33.798146761141886"/>
+      <Layer queryable="1">
+        <Name>atl_tiles_1_1</Name>
+        <Title>atl_tiles_1_1.ecw</Title>
+        <Abstract>Coverage</Abstract>
+        <SRS>EPSG:2240 EPSG:4326</SRS>
+        <LatLonBoundingBox minx="-84.4478251501018" miny="33.7854904668446" maxx="-84.43215959675469" maxy="33.798146761141886"/>
+        <BoundingBox SRS="EPSG:2240" minx="2211171.788119363" miny="1377123.5238703382" maxx="2215918.9477166883" maxy="1381716.216305637"/>
+        <Style>
+          <Name>normalize</Name>
+          <Title>style normalize</Title>
+        </Style>
+        <Style>
+          <Name>default</Name>
+          <Title>style default</Title>
+        </Style>
+        <ScaleHint min="4.240990934173412E-4" max="7.118501633301506E304"/>
+      </Layer>
+    </Layer>
+  </Capability>
+</WMT_MS_Capabilities>

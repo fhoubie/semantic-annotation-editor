@@ -1,0 +1,75 @@
+<rdf:RDF xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:void="http://rdfs.org/ns/void#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dcterms="http://purl.org/dc/terms/">
+	<!-- GEMET Erdas for testing -->
+	<void:Dataset rdf:about="http://www.eionet.europa.eu/gemet/">
+		<dcterms:title>GEMET (for testing)</dcterms:title>		
+		<dcterms:description>GEMET (for testing)</dcterms:description>
+		<void:sparqlEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-sesame/repositories/SMAAD"/>
+		<void:openSearchDescription rdf:resource="http://projects-eu.erdas.com/epf-proxy/opensearch.jsp?Ontology=GEMET"/>
+		<!--
+		<void:openSearchDescription rdf:resource="http://localhost:8080/smaad-annotation-core/opensearch.jsp"/>
+		-->
+		<void:uriLookupEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-workbench/repositories/SMAAD/explore?resource="/>
+		<void:uriSpace>http://www.eionet.europa.eu/gemet/</void:uriSpace>
+		<void:uriRegexPattern>^http://www.eionet.europa.eu/gemet/.*</void:uriRegexPattern>
+		<void:rootResource rdf:resource="http://www.eionet.europa.eu/gemet/concept/3650"/>
+		<void:dataDump rdf:resource="http://www.eionet.europa.eu/openrdf-workbench/repositories/SMAAD/export"/>
+	</void:Dataset>
+	<!-- OTEG Erdas for testing -->
+	<void:Dataset rdf:about="http://oteg.esa.int">
+		<dcterms:title>OTEG (for testing)</dcterms:title>		
+		<dcterms:description>OTEG (for testing)</dcterms:description>
+		<void:sparqlEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-sesame/repositories/OTEG"/>
+		<void:openSearchDescription rdf:resource="http://projects-eu.erdas.com/epf-proxy/opensearch.jsp?Ontology=OTEG"/>
+		<void:uriLookupEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-workbench/repositories/OTEG/explore?resource="/>
+		<void:uriSpace>http://oteg.esa.int/infodomain-v1.0.owl#</void:uriSpace>
+		<void:uriRegexPattern>^http://oteg.esa.int/infodomain-v1.0.owl#.*</void:uriRegexPattern>
+		<void:dataDump rdf:resource="http://www.eionet.europa.eu/openrdf-workbench/repositories/OTEG/export"/>
+	</void:Dataset>
+	<!-- GEOSS -->
+	<void:Dataset rdf:about="http://www.earthobservations.org/GEOSS/EO_Vocabulary">
+		<dcterms:title>GEOSS</dcterms:title>		
+		<dcterms:description>GEO AIP-4 Proposed Vocabulary</dcterms:description>		
+		<void:sparqlEndpoint rdf:resource="http://smaad.spacebel.be:8090/openrdf-sesame/repositories/geoss"/>
+		<void:openSearchDescription rdf:resource="http://smaad.spacebel.be/ontology/geoss/opensearch.xml"/>
+		<void:subset>
+			<void:Linkset rdf:about="http://www.earthobservations.org/GEOSS#Geoss2Gcmd">
+				<void:subjectsTarget rdf:resource="http://www.earthobservations.org/GEOSS/EO_Vocabulary"/>
+				<void:objectsTarget rdf:resource="http://gcmd.gsfc.nasa.gov/skos"/>
+				<void:linkPredicate rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+			</void:Linkset>
+			<void:Linkset rdf:about="http://www.earthobservations.org/GEOSS#Geoss2Gemet">
+				<void:subjectsTarget rdf:resource="http://www.earthobservations.org/GEOSS/EO_Vocabulary"/>
+				<void:objectsTarget rdf:resource="http://www.eionet.europa.eu/gemet/"/>
+				<void:linkPredicate rdf:resource="http://www.w3.org/2004/02/skos/core#exactMatch"/>
+			</void:Linkset>
+		</void:subset>
+		<void:uriSpace>http://www.earthobservations.org/GEOSS</void:uriSpace>
+		<void:rootResource rdf:resource="http://www.earthobservations.org/GEOSS/EO_Vocabulary/atmosphere"/>
+	</void:Dataset>
+	<!-- GCMD -->
+	<void:Dataset rdf:about="http://gcmd.gsfc.nasa.gov/skos">
+		<dcterms:title>GCMD</dcterms:title>		
+		<dcterms:description>GCMD</dcterms:description>
+		<void:sparqlEndpoint rdf:resource="http://smaad.spacebel.be:8090/openrdf-sesame/repositories/gcmd"/>
+		<void:openSearchDescription rdf:resource="http://smaad.spacebel.be/ontology/gcmd/opensearch.xml"/>
+	
+		<void:uriSpace>http://gcmd.gsfc.nasa.gov/skos</void:uriSpace>		
+		<void:rootResource rdf:resource="http://gcmd.gsfc.nasa.gov/skos#agriculture"/>
+	</void:Dataset>
+	<!-- GEMET -->
+	<void:Dataset rdf:about="http://www.eionet.europa.eu/gemet/">
+		<dcterms:title>GEMET</dcterms:title>		
+		<dcterms:description>GEMET</dcterms:description>
+		<void:sparqlEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-sesame/repositories/SMAAD"/>
+		<void:uriSpace>http://www.eionet.europa.eu/gemet/</void:uriSpace>
+		<void:rootResource rdf:resource="http://www.eionet.europa.eu/gemet/concept/3650"/>
+	</void:Dataset>
+	<!-- OGC -->
+	<void:Dataset rdf:about="http://www.opengis.net">	
+		<dcterms:title>OGC</dcterms:title>		
+		<dcterms:description>OGC</dcterms:description>
+		<void:uriLookupEndpoint rdf:resource=""/>
+		<void:uriSpace>http://www.opengis.net/def</void:uriSpace>
+		<void:rootResource rdf:resource="http://www.opengis.net/def/property/OGC-EO/0/AzimuthAngle"/>
+	</void:Dataset>
+</rdf:RDF>
