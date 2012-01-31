@@ -12,15 +12,15 @@
 		<servlet-class>com.erdas.projects.smaad.annotation.service.SemanticAnnotationService</servlet-class>
 		<init-param>
 			<param-name>VOID_URL</param-name>
-			<param-value>http://projects-eu.erdas.com/smaad-annotation-core/data/void.rdf</param-value>
+			<param-value>http://localhost:8080/smaad-annotation-core/data/void.rdf</param-value>
 		</init-param>
 		<init-param>
 			<param-name>XSD_VALIDATION</param-name>
-			<param-value>true</param-value>
+			<param-value>false</param-value>
 		</init-param>
 		<init-param>
 			<param-name>SCHEMATRON_VALIDATION</param-name>
-			<param-value>true</param-value>
+			<param-value>false</param-value>
 		</init-param>
 	</servlet>
 

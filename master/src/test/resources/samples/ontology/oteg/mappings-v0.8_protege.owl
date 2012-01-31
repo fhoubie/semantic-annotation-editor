@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:info="http://oteg.esa.int/infodomain-v1.0.owl#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://oteg.esa.int/mappings_protege-v1.0-v1.0.owl#"
+    xmlns:gscda="http://oteg.esa.int/gscda-v1.0.owl#"
+  xml:base="http://oteg.esa.int/mappings_protege-v1.0-v1.0.owl">
+  <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl"/>
+    <owl:imports rdf:resource="http://oteg.esa.int/gscda-v1.0.owl"/>
+  </owl:Ontology>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S3_P_002">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Agriculture"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Weather"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Climate_change"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2_P_003">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Agriculture"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_cover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2_P_002">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_cover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_015">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Sea_ice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_001">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Urban_and_industry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_002">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_cover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_011">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_navigational_aid"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_change_detection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S3_P_004">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Sea_surface_temperature"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Water_temperature"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S3_P_003">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ocean_colour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2b-S1_P_001">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Urban_and_industry"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S3_P_001">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Agriculture"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_008">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_change_detection"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_thickness_classification"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_009">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Sea_ice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_010">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_navigational_aid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_014">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_change_detection"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_navigational_aid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S3_P_005">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Tide_monitoring"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ocean_level"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_012">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_navigational_aid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2_P_007">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_cover"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2b_P_003">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Forest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S1_P_013">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_change_detection"/>
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Ice_navigational_aid"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2_P_001">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Forest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Information_Domain">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/gscda-v1.0.owl#Product_Type"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://oteg.esa.int/gscda-v1.0.owl#DAP-S_V1.0_S2b_P_002">
+    <rdfs:subClassOf rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Urban_and_industry"/>
+  </rdf:Description>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

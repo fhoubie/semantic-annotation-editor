@@ -1,0 +1,132 @@
+﻿<?xml version='1.0' encoding='utf-8' ?>
+<sml:SensorML xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:gml="http://www.opengis.net/gml" xmlns:ns8="http://www.w3.org/2001/SMIL20/Language" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sml="http://www.opengis.net/sensorML/1.0.1" xmlns:ns7="http://www.w3.org/2001/SMIL20/" xmlns:ns5="urn:us:gov:ic:ism:v2" version="1.0.1">
+        <sml:member xlink:role="urn:x-esa:def:dictionary:ESA:documentRoles:v01#instrument_calibration" xlink:type="simple">
+                <sml:System gml:id="SPOT-1_HRV1">
+                        <gml:description>HRV1 and HRV2 instruments on-board the SPOT-1, SPOT-2 and SPOT-3 satellites
+            are high resolution imaging spectrometer operating in the visible and near-infrared spectrum. Data
+            are acquired through three multi-spectral bands (XS1, XS2, and XS3) with a 20 metres spatial resolution
+            and one panchromatic band (PAN) at 10 metres spatial resolution. These two instruments may be
+            independently depointed across-track to get a viewing angle in the range [-27,+27] degrees.</gml:description>
+			
+                        <sml:identification xlink:type="simple">
+                                <sml:IdentifierList>
+                                        <sml:identifier name="System UID">
+                                                <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:uniqueID">
+                                                        <sml:value>urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:v01</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                                        <sml:identifier name="Short Name">
+                                                <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:shortName">
+                                                        <sml:value>HRV1</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                                        <sml:identifier name="Long Name">
+                                                <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:longName">
+                                                        <sml:value>Haute Résolution Visible</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                                        <sml:identifier name="Mission Name">
+                                                <sml:Term definition="urn:x-esa:def:identifier:ESA:missionName">
+                                                        <sml:codeSpace xlink:href="urn:x-esa:def:dictionary:ESA:missionName:v01" xlink:type="simple"/>
+                                                        <sml:value>SPOT-1</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                                        <sml:identifier name="parentSystemUniqueID">
+                                                <sml:Term definition="urn:ogc:def:identifier:OGC:1.0:parentSystemUniqueID">
+                                                        <sml:value>urn:ogc:id:CEOS:platform:SPOT1:v01</sml:value>
+                        </sml:Term>
+                    </sml:identifier>
+                </sml:IdentifierList>
+            </sml:identification>
+                        <sml:classification xlink:type="simple">
+                                <sml:ClassifierList>
+                                        <sml:classifier name="sensorType">
+                                                <sml:Term definition="urn:ogc:def:classifier:OGC:1.0:sensorType">
+                                                        <sml:codeSpace xlink:href="urn:ogc:def:dictionary:CEOS:eop:InstrumentTypes:v01" xlink:type="simple"/>
+                                                        <sml:value>Imaging Multispectral Radiometer</sml:value>
+                        </sml:Term>
+                    </sml:classifier>
+                                        <sml:classifier name="Acquisition Method">
+                                                <sml:Term definition="urn:x-esa:def:classifier:ESA:acquisitionMethod">
+                                                        <sml:codeSpace xlink:href="urn:x-esa:def:dictionary:ESA:acquisitionMethods:v01" xlink:type="simple"/>
+                                                        <sml:value>Pushbroom</sml:value>
+                        </sml:Term>
+                    </sml:classifier>
+                </sml:ClassifierList>
+            </sml:classification>
+                        <sml:validTime>
+                                <gml:TimePeriod>
+                                        <gml:beginPosition>1986-02-22T00:00:00Z</gml:beginPosition>
+                                        <gml:endPosition indeterminatePosition="now"></gml:endPosition>
+                </gml:TimePeriod>
+            </sml:validTime>
+                        <sml:characteristics xlink:type="simple">
+                                <swe:DataRecord>
+                                        <gml:name>Geometric Characteristics</gml:name>
+                                        <swe:field name="Swath Width at Nadir" xlink:type="simple">
+                                                <swe:Quantity definition="urn:ogc:def:property:CEOS:eop:NadirSwathWidth">
+                                                        <swe:uom code="km" xlink:type="simple"/>
+                                                        <swe:value>60.0</swe:value>
+                        </swe:Quantity>
+                    </swe:field>
+                </swe:DataRecord>
+            </sml:characteristics>
+                        <sml:characteristics xlink:type="simple">
+                                <swe:DataRecord>
+                                        <gml:name>Measurement Characteristics</gml:name>
+                                        <swe:field name="Number of Bands" xlink:type="simple">
+                                                <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfBands">
+                                                        <gml:description>Number of bands on each HRV instrument (1 PAN and 3 XS).</gml:description>
+                                                        <swe:value>4</swe:value>
+                        </swe:Count>
+                    </swe:field>
+                </swe:DataRecord>
+            </sml:characteristics>
+                        <sml:contact xlink:role="urn:x-esa:def:dictionary:ESA:contactTypes:v01#operator" xlink:type="simple">
+                                <sml:ResponsibleParty>
+                                        <sml:individualName>Aimé MEYGRET</sml:individualName>
+                                        <sml:organizationName>CNES</sml:organizationName>
+                                        <sml:contactInfo>
+                                                <sml:phone>
+                                                        <sml:voice>+33 5 6127 3131</sml:voice>
+                        </sml:phone>
+                                                <sml:address>
+                                                        <sml:deliveryPoint>18 avenue Edouard Belin</sml:deliveryPoint>
+                                                        <sml:city>TOULOUSE</sml:city>
+                                                        <sml:postalCode>31000</sml:postalCode>
+                                                        <sml:country>FRANCE</sml:country>
+                                                        <sml:electronicMailAddress>Aime.Meygret@cnes.fr</sml:electronicMailAddress>
+                        </sml:address>
+                    </sml:contactInfo>
+                </sml:ResponsibleParty>
+            </sml:contact>
+                        <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook" xlink:type="simple">
+                                <sml:Document>
+                                        <gml:description>Page of the CNES Website describing the SPOT missions.</gml:description>
+                                        <sml:onlineResource xlink:href="http://smsc.cnes.fr/SPOT/index.htm" xlink:type="simple"/>
+                </sml:Document>
+            </sml:documentation>
+                        <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook" xlink:type="simple">
+                                <sml:Document>
+                                        <gml:description>Page of the French education ministry Website describing the HRV Instrument.</gml:description>
+                                        <sml:onlineResource xlink:href="http://www.educnet.education.fr/orbito/system/spot/spot3.htm" xlink:type="simple"/>
+                </sml:Document>
+            </sml:documentation>
+                        <sml:inputs xlink:type="simple">
+                                <sml:InputList>
+                                        <sml:input name="Radiation" xlink:type="simple">
+                                                <swe:ObservableProperty definition="urn:x-esa:def:phenomenon:ESA:radiation"/>
+                    </sml:input>
+                </sml:InputList>
+            </sml:inputs>
+                        <sml:components xlink:type="simple">
+                                <sml:ComponentList>
+                                        <sml:component xlink:href="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:PAN:v01" name="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:PAN:v01" xlink:type="simple"/>
+                                        <sml:component xlink:href="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS1:v01" name="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS1:v01" xlink:type="simple"/>
+                                        <sml:component xlink:href="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS1:v01" name="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS1:v01" xlink:type="simple"/>
+                                        <sml:component xlink:href="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS3:v01" name="urn:x-esa:object:instrument:ESA:SPOT-1:HRV1:XS3:v01" xlink:type="simple"/>
+                </sml:ComponentList>
+            </sml:components>
+        </sml:System>
+    </sml:member>
+</sml:SensorML>

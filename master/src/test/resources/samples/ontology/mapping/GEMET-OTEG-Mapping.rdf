@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  
+  <!-- Related term definition -->
+  <rdf:Description rdf:about="http://www.eionet.europa.eu/gemet/concept/1462">
+    <skos:related rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Climate"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate">
+    <skos:related rdf:resource="http://www.eionet.europa.eu/gemet/concept/1462"/>
+  </rdf:Description>
+  
+  <!-- Related term definition -->
+  <rdf:Description rdf:about="http://www.eionet.europa.eu/gemet/concept/1471">
+    <skos:related rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Climate_change"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate_change">
+    <skos:related rdf:resource="http://www.eionet.europa.eu/gemet/concept/1471"/>
+  </rdf:Description>
+  
+  <!-- Related term definition -->
+  <rdf:Description rdf:about="http://www.eionet.europa.eu/gemet/concept/9269">
+    <skos:related rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Weather"/>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Weather">
+    <skos:related rdf:resource="http://www.eionet.europa.eu/gemet/concept/9269"/>
+  </rdf:Description>
+  
+</rdf:RDF>

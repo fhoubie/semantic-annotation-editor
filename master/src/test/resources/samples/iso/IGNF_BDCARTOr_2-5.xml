@@ -1,0 +1,2161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gmd:MD_Metadata xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:gml="http://www.opengis.net/gml" xmlns:gsr="http://www.isotc211.org/2005/gsr" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gss="http://www.isotc211.org/2005/gss" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="IGNF_BDCARTOr_2-5">
+  <gmd:fileIdentifier>
+    <gco:CharacterString>IGNF_BDCARTOr_2-5.xml</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language>
+    <gmd:LanguageCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#LanguageCode" codeListValue="fre">fre</gmd:LanguageCode>
+  </gmd:language>
+  <gmd:characterSet>
+    <gmd:MD_CharacterSetCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+  </gmd:characterSet>
+  <gmd:hierarchyLevel>
+    <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Produit</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <gmd:CI_ResponsibleParty>
+      <gmd:organisationName>
+        <gco:CharacterString>IGN-F</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:positionName>
+        <gco:CharacterString>responsable de marché</gco:CharacterString>
+      </gmd:positionName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:address>
+            <gmd:CI_Address>
+              <gmd:deliveryPoint>
+                <gco:CharacterString>Institut Géographique National - Service Clients</gco:CharacterString>
+              </gmd:deliveryPoint>
+              <gmd:deliveryPoint>
+                <gco:CharacterString>73 avenue de Paris</gco:CharacterString>
+              </gmd:deliveryPoint>
+              <gmd:city>
+                <gco:CharacterString>Saint Mandé</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>94165 Cedex</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>FRA</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>sav-bd@ign.fr</gco:CharacterString>
+              </gmd:electronicMailAddress>
+            </gmd:CI_Address>
+          </gmd:address>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+      </gmd:role>
+    </gmd:CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp>
+    <gco:Date>2006-01-12</gco:Date>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName>
+    <gco:CharacterString>ISO 19115</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:metadataStandardVersion>
+    <gco:CharacterString>2005/PDAM 1</gco:CharacterString>
+  </gmd:metadataStandardVersion>
+  <gmd:locale>
+    <gmd:PT_Locale id="locale-eng">
+      <gmd:languageCode>
+        <gmd:LanguageCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#LanguageCode" codeListValue="eng">eng</gmd:LanguageCode>
+      </gmd:languageCode>
+      <gmd:country>
+        <gmd:Country codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#Country" codeListValue="GB">GB</gmd:Country>
+      </gmd:country>
+      <gmd:characterEncoding>
+        <gmd:MD_CharacterSetCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_CharacterSetCode" codeListValue="8859part15">8859part15</gmd:MD_CharacterSetCode>
+      </gmd:characterEncoding>
+    </gmd:PT_Locale>
+  </gmd:locale>
+  <gmd:spatialRepresentationInfo>
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:topologyLevel>
+        <gmd:MD_TopologyLevelCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_TopologyLevelCode" codeListValue="fullPlanarGraph">fullPlanarGraph</gmd:MD_TopologyLevelCode>
+      </gmd:topologyLevel>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_GeometricObjectTypeCode" codeListValue="point">point</gmd:MD_GeometricObjectTypeCode>
+          </gmd:geometricObjectType>
+          <gmd:geometricObjectCount>
+            <gco:Integer>0</gco:Integer>
+          </gmd:geometricObjectCount>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_GeometricObjectTypeCode" codeListValue="curve">curve</gmd:MD_GeometricObjectTypeCode>
+          </gmd:geometricObjectType>
+          <gmd:geometricObjectCount>
+            <gco:Integer>0</gco:Integer>
+          </gmd:geometricObjectCount>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_GeometricObjectTypeCode" codeListValue="surface">surface</gmd:MD_GeometricObjectTypeCode>
+          </gmd:geometricObjectType>
+          <gmd:geometricObjectCount>
+            <gco:Integer>0</gco:Integer>
+          </gmd:geometricObjectCount>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB1">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB1">NTF Lambert I</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB1C">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB1C">NTF Lambert I carto</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB2">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB2">NTF Lambert II</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB2C">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB2C">NTF Lambert II carto</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB3">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB3">NTF Lambert III</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB3C">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB3C">NTF Lambert III carto</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB4">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB4">NTF Lambert IV</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB4C">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB4C">NTF Lambert IV carto</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMBE">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMBE">NTF Lambert II étendu</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.LAMB93">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#LAMB93">RGF93 Lambert-93</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM22RGFG95">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM22RGFG95">RGFG95 Guyane UTM f.22 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM20W84GUAD">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM20W84GUAD">WGS84 Guadeloupe UTM f.20 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM20W84MART">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM20W84MART">WGS84 Martinique UTM f.20 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.RGR92UTM40S">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#RGR92UTM40S">RGR92 UTM 40 Sud</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.CSG67UTM21">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#CSG67UTM21">CSG67 UTM fuseau 21 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.CSG67UTM22">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#CSG67UTM22">CSG67 UTM fuseau 22 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.GUAD48UTM20">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#GUAD48UTM20">Guadeloupe UTM f.20 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.GUADFM49U20">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#GUADFM49U20">Guadeloupe Fort-Marigot UTM f.20 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.MART38UTM20">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#MART38UTM20">Martinique UTM fuseau 20 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.REUN47GAUSSL">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#REUN47GAUSSL">Réunion Gauss Laborde</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM30W84">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM30W84">WGS84 UTM fuseau 30 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM31W84">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM31W84">WGS84 UTM fuseau 31 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM32W84">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM32W84">WGS84 UTM fuseau 32 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM30RGF93">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM30RGF93">RGF93 UTM fuseau 30 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM31RGF93">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM31RGF93">RGF93 UTM fuseau 31 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:referenceSystemInfo>
+    <gmd:MD_ReferenceSystem id="IGNF_BDCARTOr_2-5.xml.referenceSystemInfo.UTM32RGF93">
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gmx:Anchor xlink:href="http://librairies.ign.fr/geoportail/resources/RIG.xml#UTM32RGF93">RGF93 UTM fuseau 32 Nord</gmx:Anchor>
+          </gmd:code>
+          <gmd:codeSpace>
+            <gco:CharacterString>urn:ogc:def:crs:IGNF:1.1</gco:CharacterString>
+          </gmd:codeSpace>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo>
+    <gmd:MD_DataIdentification>
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>BD CARTO®</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2005-01-01</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+          <gmd:identifier>
+            <gmd:MD_Identifier id="IGNF_BDCARTOr_2-5.identifier">
+              <gmd:code>
+                <gco:CharacterString>IGNF_BDCARTOr_2-5</gco:CharacterString>
+              </gmd:code>
+            </gmd:MD_Identifier>
+          </gmd:identifier>
+          <gmd:series>
+            <gmd:CI_Series>
+              <gmd:name>
+                <gco:CharacterString>DL_DC_BDCARTOr_2-5.pdf</gco:CharacterString>
+              </gmd:name>
+              <gmd:issueIdentification>
+                <gco:CharacterString>Spécification de produit</gco:CharacterString>
+              </gmd:issueIdentification>
+            </gmd:CI_Series>
+          </gmd:series>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract>
+        <gco:CharacterString>La BD CARTO(r) est une base de données vectorielles décrivant sur l'ensemble du territoire français l'information cartographique aux échelles départementales et régionales.</gco:CharacterString>
+      </gmd:abstract>
+      <gmd:pointOfContact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:organisationName>
+            <gco:CharacterString>IGN-F</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString>responsable produit</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString>sav-bd@ign.fr</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:pointOfContact>
+      <gmd:resourceMaintenance>
+        <gmd:MD_MaintenanceInformation id="IGNF_BDCARTOr_2-5.xml.resourceMaintenance_1">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually">annually</gmd:MD_MaintenanceFrequencyCode>
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:maintenanceNote>
+            <gco:CharacterString>Mise à jour partielle trimestrielle</gco:CharacterString>
+          </gmd:maintenanceNote>
+        </gmd:MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.EDIGeO">
+          <gmd:name>
+            <gco:CharacterString>EDIGéO</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>NF Z-15000</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.E00">
+          <gmd:name>
+            <gco:CharacterString>Export Arc/Info</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>8.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.Shapefile">
+          <gmd:name>
+            <gco:CharacterString>SHAPEFILE</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>1.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.MapInfo">
+          <gmd:name>
+            <gco:CharacterString>MapInfo Mif/Mid</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>4.5</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.Geoconcept50">
+          <gmd:name>
+            <gco:CharacterString>Géoconcept Export</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>5.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.Geoconcept36">
+          <gmd:name>
+            <gco:CharacterString>Géoconcept Export</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>3.6</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:resourceFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.resourceFormat.DXF">
+          <gmd:name>
+            <gco:CharacterString>DXF</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>12.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:fileDecompressionTechnique>
+            <gco:CharacterString>gunzip</gco:CharacterString>
+          </gmd:fileDecompressionTechnique>
+        </gmd:MD_Format>
+      </gmd:resourceFormat>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>ISO 19139 ; IGN-F</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>BDCARTO</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>EDIGeO</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>E00</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>SHAPEFILE</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>MIF/MID</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>GEOCONCEPT</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>DXF</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords id="IGNF_BDCARTOr_2-5.descriptiveKeywords.INSPIRE">
+          <gmd:keyword>
+            <gco:CharacterString>biogéographie</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>environnement urbain, stress urbain</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>distribution démographique</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>organisation administrative</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>statistiques</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>énergie</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>ressources</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>hydrographie</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>toponymie (approx.)</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>adresse (approx.)</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>bâtiment</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>industrie</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>politique environnementale</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>transport</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:keyword>
+            <gco:CharacterString>service public</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_KeywordTypeCode" codeListValue="theme">theme</gmd:MD_KeywordTypeCode>
+          </gmd:type>
+          <gmd:thesaurusName>
+            <gmd:CI_Citation>
+              <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Thésaurus GEMET</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#locale-eng">GEMET Thesaurus</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:title>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date>2007-10-17</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="creation">creation</gmd:CI_DateTypeCode>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:edition>
+                <gco:CharacterString>1.0</gco:CharacterString>
+              </gmd:edition>
+            </gmd:CI_Citation>
+          </gmd:thesaurusName>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceSpecificUsage>
+        <gmd:MD_Usage id="IGNF_BDCARTOr_2-5.xml.resourceSpecificUsage_1">
+          <gmd:specificUsage>
+            <gco:CharacterString>Echelles d'affichage</gco:CharacterString>
+          </gmd:specificUsage>
+          <gmd:userDeterminedLimitations>
+            <gco:CharacterString>Echelles comprises entre le 1:25,000ième et le 1:500,000ième</gco:CharacterString>
+          </gmd:userDeterminedLimitations>
+          <gmd:userContactInfo>
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>IGN-F</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString>responsable de marché</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>sav-bd@ign.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="custodian">custodian</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:userContactInfo>
+        </gmd:MD_Usage>
+      </gmd:resourceSpecificUsage>
+      <gmd:resourceConstraints>
+        <gmd:MD_LegalConstraints>
+          <gmd:useLimitation>
+            <gco:CharacterString>Licence standard monoposte</gco:CharacterString>
+          </gmd:useLimitation>
+          <gmd:accessConstraints>
+            <gmd:MD_RestrictionCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_RestrictionCode" codeListValue="copyright">copyright</gmd:MD_RestrictionCode>
+          </gmd:accessConstraints>
+          <gmd:useConstraints>
+            <gmd:MD_RestrictionCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_RestrictionCode" codeListValue="license">license</gmd:MD_RestrictionCode>
+          </gmd:useConstraints>
+        </gmd:MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:resourceConstraints>
+        <gmd:MD_SecurityConstraints>
+          <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Aucune contrainte</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#locale-eng">no conditions apply</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:useLimitation>
+          <gmd:classification>
+            <gmd:MD_ClassificationCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</gmd:MD_ClassificationCode>
+          </gmd:classification>
+        </gmd:MD_SecurityConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector">vector</gmd:MD_SpatialRepresentationTypeCode>
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction id="IGNF_BDCARTOr_2-5.xml.spatialResolution_1">
+              <gmd:denominator>
+                <gco:Integer>100000</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:distance>
+            <gco:Distance uom="m">15.00</gco:Distance>
+          </gmd:distance>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#LanguageCode" codeListValue="fre">fre</gmd:LanguageCode>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_CharacterSetCode" codeListValue="utf8">utf8</gmd:MD_CharacterSetCode>
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>economy</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>intelligenceMilitary</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>inlandWaters</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>location</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>structure</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>transportation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>utilitiesCommunication</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description>
+            <gco:CharacterString>Les emprises décrivent l'étendue potentielle des données.  Les polygones et zones géographiques décrivent les zones où les données sont réellement présentes.</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>-5.02708379739</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>9.66616383553</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>41.38537250603</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>51.07460146978</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:authority>
+                    <gmd:CI_Citation>
+                      <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+                        <gco:CharacterString>ISO 3166 alpha 3</gco:CharacterString>
+                        <gmd:PT_FreeText>
+                          <gmd:textGroup>
+                            <gmd:LocalisedCharacterString locale="#locale-eng">ISO 3166 alpha 3</gmd:LocalisedCharacterString>
+                          </gmd:textGroup>
+                        </gmd:PT_FreeText>
+                      </gmd:title>
+                      <gmd:date>
+                        <gmd:CI_Date>
+                          <gmd:date>
+                            <gco:Date>1974</gco:Date>
+                          </gmd:date>
+                          <gmd:dateType>
+                            <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+                          </gmd:dateType>
+                        </gmd:CI_Date>
+                      </gmd:date>
+                    </gmd:CI_Citation>
+                  </gmd:authority>
+                  <gmd:code>
+                    <gco:CharacterString>FXX</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:temporalElement>
+            <gmd:EX_TemporalExtent>
+              <gmd:extent>
+                <gml:TimePeriod gml:id="extent.1">
+                  <gml:beginPosition>2004-04-01</gml:beginPosition>
+                  <gml:endPosition>2006-01-01</gml:endPosition>
+                </gml:TimePeriod>
+              </gmd:extent>
+            </gmd:EX_TemporalExtent>
+          </gmd:temporalElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </gmd:MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:contentInfo>
+    <gmd:MD_FeatureCatalogueDescription>
+      <gmd:complianceCode>
+        <gco:Boolean>true</gco:Boolean>
+      </gmd:complianceCode>
+      <gmd:language>
+        <gco:CharacterString>fre</gco:CharacterString>
+      </gmd:language>
+      <gmd:includedWithDataset>
+        <gco:Boolean>true</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_ROUTE</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_VFERR</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_HYDRO</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_ADMIN</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_OCCSOL</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_TOPON</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>SCHEMA_BDCARTOr_2-5_EQUIP</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>1999-06-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_DateTypeCode" codeListValue="publication">publication</gmd:CI_DateTypeCode>
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+          <gmd:edition>
+            <gco:CharacterString>2.5</gco:CharacterString>
+          </gmd:edition>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+    </gmd:MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo>
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.EDIGeO">
+          <gmd:name>
+            <gco:CharacterString>EDIGeO</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>NF Z-15000</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>AFNOR</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.afnor.fr/portail.asp</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>HTTP</gco:CharacterString>
+                          </gmd:protocol>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+            </gmd:MD_Distributor>
+          </gmd:formatDistributor>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.E00">
+          <gmd:name>
+            <gco:CharacterString>Export Arc/Info</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>8.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>ESRI</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.esri.com/</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>HTTP</gco:CharacterString>
+                          </gmd:protocol>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+            </gmd:MD_Distributor>
+          </gmd:formatDistributor>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.Shapefile">
+          <gmd:name>
+            <gco:CharacterString>SHAPEFILE</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>1.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor/>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.MapInfo">
+          <gmd:name>
+            <gco:CharacterString>MapInfo Mif/Mid</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>4.5</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>MapInfo</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.mapinfo.com/</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>HTTP</gco:CharacterString>
+                          </gmd:protocol>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+            </gmd:MD_Distributor>
+          </gmd:formatDistributor>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.Geoconcept50">
+          <gmd:name>
+            <gco:CharacterString>Géoconcept Export</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>5.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>Géoconcept</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.geoconcept.com/</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>HTTP</gco:CharacterString>
+                          </gmd:protocol>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+            </gmd:MD_Distributor>
+          </gmd:formatDistributor>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.Geoconcept36">
+          <gmd:name>
+            <gco:CharacterString>Géoconcept Export</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>3.6</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor/>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format id="IGNF_BDCARTOr_2-5.xml.distributionFormat.DXF">
+          <gmd:name>
+            <gco:CharacterString>DXF</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>12.0</gco:CharacterString>
+          </gmd:version>
+          <gmd:formatDistributor>
+            <gmd:MD_Distributor>
+              <gmd:distributorContact>
+                <gmd:CI_ResponsibleParty>
+                  <gmd:organisationName>
+                    <gco:CharacterString>Autodesk</gco:CharacterString>
+                  </gmd:organisationName>
+                  <gmd:contactInfo>
+                    <gmd:CI_Contact>
+                      <gmd:onlineResource>
+                        <gmd:CI_OnlineResource>
+                          <gmd:linkage>
+                            <gmd:URL>http://www.autodesk.com/</gmd:URL>
+                          </gmd:linkage>
+                          <gmd:protocol>
+                            <gco:CharacterString>HTTP</gco:CharacterString>
+                          </gmd:protocol>
+                        </gmd:CI_OnlineResource>
+                      </gmd:onlineResource>
+                    </gmd:CI_Contact>
+                  </gmd:contactInfo>
+                  <gmd:role>
+                    <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="originator">originator</gmd:CI_RoleCode>
+                  </gmd:role>
+                </gmd:CI_ResponsibleParty>
+              </gmd:distributorContact>
+            </gmd:MD_Distributor>
+          </gmd:formatDistributor>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributor>
+        <gmd:MD_Distributor>
+          <gmd:distributorContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:organisationName>
+                <gco:CharacterString>IGN-F</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>sav-bd@ign.fr</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#CI_RoleCode" codeListValue="distributor">distributor</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:distributorContact>
+          <gmd:distributionOrderProcess>
+            <gmd:MD_StandardOrderProcess>
+              <gmd:fees>
+                <gco:CharacterString>Contacter le service des ventes de la direction commerciale</gco:CharacterString>
+              </gmd:fees>
+              <gmd:plannedAvailableDateTime>
+                <gco:DateTime>2005-01-01T00:00:00</gco:DateTime>
+              </gmd:plannedAvailableDateTime>
+              <gmd:orderingInstructions>
+                <gco:CharacterString>Emprise géographique, format informatique et système de coordonnées géographiques nécessaires.</gco:CharacterString>
+              </gmd:orderingInstructions>
+            </gmd:MD_StandardOrderProcess>
+          </gmd:distributionOrderProcess>
+        </gmd:MD_Distributor>
+      </gmd:distributor>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:unitsOfDistribution>
+            <gco:CharacterString>franceDepartment</gco:CharacterString>
+          </gmd:unitsOfDistribution>
+          <gmd:transferSize>
+            <gco:Real>20</gco:Real>
+          </gmd:transferSize>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_ediA.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_ediB.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_shp.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_mif.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_gc.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://librairies.ign.fr/geoportail/metadata/transfers/BDCARTOr_2-5/DL_BDCARTOr_2-5_DXF.pdf</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+          <gmd:offLine>
+            <gmd:MD_Medium>
+              <gmd:name>
+                <gmd:MD_MediumNameCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_MediumNameCode" codeListValue="cdRom">cdRom</gmd:MD_MediumNameCode>
+              </gmd:name>
+              <gmd:mediumFormat>
+                <gmd:MD_MediumFormatCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_MediumFormatCode" codeListValue="iso9660">iso9660</gmd:MD_MediumFormatCode>
+              </gmd:mediumFormat>
+            </gmd:MD_Medium>
+          </gmd:offLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Réseau routier classé</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.10">
+                      <gml:beginPosition>2006-07-01T12:00:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T12:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètre</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274043">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005"/>
+                  <gml:name>m</gml:name>
+                  <gml:quantityType>m</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>15</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274101">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005"/>
+                  <gml:name>%</gml:name>
+                  <gml:quantityType>%</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>2</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Exploitation par les agents de l'IGN d'informations collectées auprès des DDE, Conseils généraux et sur le terrain.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:source>
+            <gmd:LI_Source>
+              <gmd:description>
+                <gco:CharacterString>Plans et documents provenant de DDE, Conseils Généraux.</gco:CharacterString>
+              </gmd:description>
+              <gmd:sourceExtent>
+                <gmd:EX_Extent>
+                  <gmd:temporalElement>
+                    <gmd:EX_TemporalExtent>
+                      <gmd:extent>
+                        <gml:TimePeriod gml:id="extent.2">
+                          <gml:beginPosition>2005-10-01T12:00:00</gml:beginPosition>
+                          <gml:endPosition>2006-07-01T12:00:00</gml:endPosition>
+                        </gml:TimePeriod>
+                      </gmd:extent>
+                    </gmd:EX_TemporalExtent>
+                  </gmd:temporalElement>
+                </gmd:EX_Extent>
+              </gmd:sourceExtent>
+            </gmd:LI_Source>
+          </gmd:source>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Réseau ferré</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.11">
+                      <gml:beginPosition>2006-07-01T14:43:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T14:43:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274278">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>10</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274315">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">pourcent</gml:identifier>
+                  <gml:name>pourcent</gml:name>
+                  <gml:quantityType>pourcentage</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>2</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Collecte terrain par les agents IGN auprès des organismes (RFF)</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Saisie de plans et documents divers</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.12">
+                              <gml:beginPosition>2005-10-01T15:03:00</gml:beginPosition>
+                              <gml:endPosition>2006-07-01T15:04:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Hydrographie</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.21">
+                      <gml:beginPosition>2006-07-01T00:00:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T00:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274475">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>30</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274513">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">pourcent</gml:identifier>
+                  <gml:name>pourcent</gml:name>
+                  <gml:quantityType>pourcentage</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>2</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Saisie par les agents IGN grâce aux contributions des agences de l'eau.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Plans et documents des agences de l'eau</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.22">
+                              <gml:beginPosition>2000-01-01T00:00:00</gml:beginPosition>
+                              <gml:endPosition>2005-06-01T00:00:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Habillage</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.31">
+                      <gml:beginPosition>2000-07-01T00:00:00</gml:beginPosition>
+                      <gml:endPosition>2010-07-01T00:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274674">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>30</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Mise à jour par contribution de l'IFEN.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Images satellites et orthophotographies</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.32">
+                              <gml:beginPosition>2000-01-01T00:00:00</gml:beginPosition>
+                              <gml:endPosition>2005-01-01T00:00:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Administratif</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.41">
+                      <gml:beginPosition>2006-07-01T00:00:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T00:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274834">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>35</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2274871">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">pourcent</gml:identifier>
+                  <gml:name>pourcent</gml:name>
+                  <gml:quantityType>pourcentage</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>0</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Mise à jour annuelle par les agents IGN.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Base de donnees communale de l'INSEE</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.42">
+                              <gml:beginPosition>2005-01-01T00:00:00</gml:beginPosition>
+                              <gml:endPosition>2006-01-01T00:00:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Toponyme ponctuel</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.51">
+                      <gml:beginPosition>2006-07-01T00:00:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T00:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2275030">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>100</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2275068">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">pourcent</gml:identifier>
+                  <gml:name>pourcent</gml:name>
+                  <gml:quantityType>pourcentage</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>5</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Mise à jour trimestrielle par les agents IGN.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Collecte terrain de plans et documents</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.52">
+                              <gml:beginPosition>2005-01-01T00:00:00</gml:beginPosition>
+                              <gml:endPosition>2006-07-01T00:00:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="dataset">dataset</gmd:MD_ScopeCode>
+          </gmd:level>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:description>
+                <gco:CharacterString>Equipement</gco:CharacterString>
+              </gmd:description>
+              <gmd:temporalElement>
+                <gmd:EX_TemporalExtent>
+                  <gmd:extent>
+                    <gml:TimePeriod gml:id="extent.71">
+                      <gml:beginPosition>2006-07-01T00:00:00</gml:beginPosition>
+                      <gml:endPosition>2007-07-01T00:00:00</gml:endPosition>
+                    </gml:TimePeriod>
+                  </gmd:extent>
+                </gmd:EX_TemporalExtent>
+              </gmd:temporalElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:report>
+        <gmd:DQ_AbsoluteExternalPositionalAccuracy>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>précision en mètres</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2275228">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">metre</gml:identifier>
+                  <gml:name>metre</gml:name>
+                  <gml:quantityType>length</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>30</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_AbsoluteExternalPositionalAccuracy>
+      </gmd:report>
+      <gmd:report>
+        <gmd:DQ_CompletenessOmission>
+          <gmd:nameOfMeasure>
+            <gco:CharacterString>pourcentage maximal d'omission</gco:CharacterString>
+          </gmd:nameOfMeasure>
+          <gmd:result>
+            <gmd:DQ_QuantitativeResult>
+              <gmd:valueUnit>
+                <gml:UnitDefinition gml:id="id2275265">
+                  <gml:identifier codeSpace="http://www.isotc211.org/2005">pourcent</gml:identifier>
+                  <gml:name>pourcent</gml:name>
+                  <gml:quantityType>pourcentage</gml:quantityType>
+                </gml:UnitDefinition>
+              </gmd:valueUnit>
+              <gmd:value>
+                <gco:Record xsi:type="gco:CharacterString_PropertyType">
+                  <gco:CharacterString>2</gco:CharacterString>
+                </gco:Record>
+              </gmd:value>
+            </gmd:DQ_QuantitativeResult>
+          </gmd:result>
+        </gmd:DQ_CompletenessOmission>
+      </gmd:report>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement>
+            <gco:CharacterString>Collecte par les agents IGN.</gco:CharacterString>
+          </gmd:statement>
+          <gmd:processStep>
+            <gmd:LI_ProcessStep>
+              <gmd:description>
+                <gco:CharacterString>Plans et documents obtenus auprès de RTE</gco:CharacterString>
+              </gmd:description>
+              <gmd:source>
+                <gmd:LI_Source>
+                  <gmd:sourceExtent>
+                    <gmd:EX_Extent>
+                      <gmd:temporalElement>
+                        <gmd:EX_TemporalExtent>
+                          <gmd:extent>
+                            <gml:TimePeriod gml:id="extent.72">
+                              <gml:beginPosition>2006-04-01T00:00:00</gml:beginPosition>
+                              <gml:endPosition>2006-04-01T00:00:00</gml:endPosition>
+                            </gml:TimePeriod>
+                          </gmd:extent>
+                        </gmd:EX_TemporalExtent>
+                      </gmd:temporalElement>
+                    </gmd:EX_Extent>
+                  </gmd:sourceExtent>
+                </gmd:LI_Source>
+              </gmd:source>
+            </gmd:LI_ProcessStep>
+          </gmd:processStep>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:dataQualityInfo>
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ScopeCode" codeListValue="series">series</gmd:MD_ScopeCode>
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage>
+          <gmd:statement xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Produit par l'Institut Géographique National</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#locale-eng">Produced by National Mapping Agency - France</gmd:LocalisedCharacterString>
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:statement>
+        </gmd:LI_Lineage>
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+  <gmd:metadataConstraints>
+    <gmd:MD_SecurityConstraints>
+      <gmd:useLimitation xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Aucune contrainte</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#locale-eng">no conditions apply</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:useLimitation>
+      <gmd:classification>
+        <gmd:MD_ClassificationCode codeList="http://librairies.ign.fr/geoportail/resources/Codelists.xml#MD_ClassificationCode" codeListValue="unclassified">unclassified</gmd:MD_ClassificationCode>
+      </gmd:classification>
+    </gmd:MD_SecurityConstraints>
+  </gmd:metadataConstraints>
+</gmd:MD_Metadata>

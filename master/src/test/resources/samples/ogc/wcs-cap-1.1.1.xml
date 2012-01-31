@@ -1,0 +1,4651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wcs:Capabilities version="1.1.1" xmlns:wcs="http://www.opengis.net/wcs/1.1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ogc="http://www.opengis.net/ogc" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://156.35.42.97:8080/geoserver/schemas/wcs/1.1.1/wcsGetCapabilities.xsd" updateSequence="1434">
+	<ows:ServiceIdentification>
+		<ows:Title>Web Coverage Service</ows:Title>
+		<ows:Abstract>This server implements the WCS specification 1.0 and 1.1.1, it's reference implementation of WCS 1.1.1. All layers published by this service are available on WMS also.
+		</ows:Abstract>
+		<ows:Keywords>
+			<ows:Keyword>WCS</ows:Keyword>
+			<ows:Keyword>WMS</ows:Keyword>
+			<ows:Keyword>GEOSERVER</ows:Keyword>
+			<ows:Keyword>existing</ows:Keyword>
+		</ows:Keywords>
+		<ows:ServiceType>WCS</ows:ServiceType>
+		<ows:ServiceTypeVersion>1.1.0</ows:ServiceTypeVersion>
+		<ows:ServiceTypeVersion>1.1.1</ows:ServiceTypeVersion>
+		<ows:Fees>NONE</ows:Fees>
+		<ows:AccessConstraints>NONE</ows:AccessConstraints>
+	</ows:ServiceIdentification>
+	<ows:ServiceProvider>
+		<ows:ProviderName>The ancient geographes INC</ows:ProviderName>
+		<ows:ProviderSite xlink:href="http://geoserver.org"/>
+		<ows:ServiceContact>
+			<ows:IndividualName>Claudius Ptolomaeus</ows:IndividualName>
+			<ows:PositionName>Chief geographer</ows:PositionName>
+			<ows:ContactInfo>
+				<ows:Phone/>
+				<ows:Address>
+					<ows:City>Alexandria</ows:City>
+					<ows:Country>Egypt</ows:Country>
+					<ows:ElectronicMailAddress>claudius.ptolomaeus@gmail.com</ows:ElectronicMailAddress>
+				</ows:Address>
+				<ows:OnlineResource xlink:href="http://geoserver.org"/>
+			</ows:ContactInfo>
+		</ows:ServiceContact>
+	</ows:ServiceProvider>
+	<ows:OperationsMetadata>
+		<ows:Operation name="GetCapabilities">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+		</ows:Operation>
+		<ows:Operation name="DescribeCoverage">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+		</ows:Operation>
+		<ows:Operation name="GetCoverage">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://156.35.42.97:8080/geoserver/wcs?"/>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="store">
+				<ows:AllowedValues>
+					<ows:Value>True</ows:Value>
+					<ows:Value>False</ows:Value>
+				</ows:AllowedValues>
+			</ows:Parameter>
+		</ows:Operation>
+		<ows:Constraint name="PostEncoding">
+			<ows:AllowedValues>
+				<ows:Value>XML</ows:Value>
+			</ows:AllowedValues>
+		</ows:Constraint>
+	</ows:OperationsMetadata>
+	<wcs:Contents>
+		<wcs:CoverageSummary>
+			<ows:Title>A sample ArcGrid file</ows:Title>
+			<ows:Abstract>Generated from arcGridSample</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>arcGridSample</ows:Keyword>
+				<ows:Keyword>arcGridSample_Coverage</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-180.0 -90.0</ows:LowerCorner>
+				<ows:UpperCorner>180.0 90.0</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>Arc_Sample</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>North America sample imagery</ows:Title>
+			<ows:Abstract>A very rough imagery of North America</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>worldImageSample</ows:Keyword>
+				<ows:Keyword>worldImageSample_Coverage</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-130.85168 20.7052</ows:LowerCorner>
+				<ows:UpperCorner>-62.0054 54.1141</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>Img_Sample</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>Pk50095 is a A raster file accompanied by a spatial data file</ows:Title>
+			<ows:Abstract>Generated from img_sample2</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>img_sample2</ows:Keyword>
+				<ows:Keyword>Pk50095</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>12.999446822650462 46.722110379286</ows:LowerCorner>
+				<ows:UpperCorner>13.308182612644663 46.91359611878293</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>Pk50095</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>Sample PNG mosaic</ows:Title>
+			<ows:Abstract>Subsampled satellite imagery loaded as a mosaic of PNG images</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>mosaic</ows:Keyword>
+				<ows:Keyword>mosaic</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>6.34617490847439 36.4917718219401</ows:LowerCorner>
+				<ows:UpperCorner>20.8296831527815 46.5907669751351</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>mosaic</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpan2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpan2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpan2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpau2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpau2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpau2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsp2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsp2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsp2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpsu2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpsu2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpsu2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dpwi2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dpwi2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dpwi2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtan2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtan2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtan2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtau2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtau2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtau2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsp2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsp2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsp2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtsu2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtsu2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtsu2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>dtwi2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>dtwi2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>dtwi2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>gdem100m</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>gdem100m</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-8.0 42.0</ows:LowerCorner>
+				<ows:UpperCorner>-4.0 44.0</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>gdem100m</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pan2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pan2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pan2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pau2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pau2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pau2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psp2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psp2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psp2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>psu2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>psu2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>psu2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.230334947700655</ows:LowerCorner>
+				<ows:UpperCorner>-4.362749316630382 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>pwi2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>pwi2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>pwi2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>sfdem is a Tagged Image File Format with Geographic information</ows:Title>
+			<ows:Abstract>Generated from sfdem</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>sfdem</ows:Keyword>
+				<ows:Keyword>sfdem</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-103.87108701853181 44.370187074132616</ows:LowerCorner>
+				<ows:UpperCorner>-103.62940739432703 44.5016011535299</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>sfdem</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tan2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tan2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tan2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tau2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tau2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tau2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsp2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsp2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsp2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>tsu2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>tsu2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>tsu2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19701979</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19701979</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19701979</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19701979w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19701979w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19701979w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19701990</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19701990</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19701990</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19701990w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19701990w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19701990w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19702009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19702009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19702009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19702009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19702009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19702009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19801989</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19801989</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19801989</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19801989w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19801989w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19801989w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19901999</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19901999</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19901999</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi19901999w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi19901999w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi19901999w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi20002009</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi20002009</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.316121051741393 42.265970755755546</ows:LowerCorner>
+				<ows:UpperCorner>-4.2912886140423385 44.32835650873218</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi20002009</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi20002009w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi20002009w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi20002009w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2010a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2010a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2010a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2010a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2010a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2010a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2040a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2040a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2040a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2040a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2040a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2040a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070a1b</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070a1b</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070a1b</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070a1bw</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070a1bw</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070a1bw</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070a2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070a2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070a2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070a2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070a2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070a2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070b2</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070b2</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.329999316630374 42.23033494770065</ows:LowerCorner>
+				<ows:UpperCorner>-4.3627493166303815 44.32571441198636</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070b2</wcs:Identifier>
+		</wcs:CoverageSummary>
+		<wcs:CoverageSummary>
+			<ows:Title>twi2070b2w</ows:Title>
+			<ows:Abstract>Generated from GeoTIFF</ows:Abstract>
+			<ows:Keywords>
+				<ows:Keyword>WCS</ows:Keyword>
+				<ows:Keyword>GeoTIFF</ows:Keyword>
+				<ows:Keyword>twi2070b2w</ows:Keyword>
+			</ows:Keywords>
+			<ows:WGS84BoundingBox>
+				<ows:LowerCorner>-7.1958950309160885 42.86754560679873</ows:LowerCorner>
+				<ows:UpperCorner>-4.498395030916096 43.690045606798726</ows:UpperCorner>
+			</ows:WGS84BoundingBox>
+			<wcs:Identifier>twi2070b2w</wcs:Identifier>
+		</wcs:CoverageSummary>
+	</wcs:Contents>
+</wcs:Capabilities>

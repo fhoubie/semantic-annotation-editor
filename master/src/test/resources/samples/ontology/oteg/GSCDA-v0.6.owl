@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns="http://oteg.esa.int/gscda-v1.0.owl#"
+  xml:base="http://oteg.esa.int/gscda-v1.0.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2_P_003">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Dataset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S3_P_002">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Dataset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_015">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Dataset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S3_P_003">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Dataset"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Dataset">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Product_Type"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2b-S1_P_001">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_008">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_009">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_010">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_012">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2b_P_003">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2b_P_002">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Product_Type">
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Mission"/>
+    </owl:disjointWith>
+    <owl:disjointWith>
+      <owl:Class rdf:ID="Sensor"/>
+    </owl:disjointWith>
+  </owl:Class>
+  <owl:Class rdf:about="#Mission">
+    <owl:disjointWith>
+      <owl:Class rdf:about="#Sensor"/>
+    </owl:disjointWith>
+    <owl:disjointWith rdf:resource="#Product_Type"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2_P_002">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_001">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_011">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_002">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S3_P_004">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S3_P_001">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S3_P_005">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_014">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2_P_007">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S1_P_013">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:ID="DAP-S_V1.0_S2_P_001">
+    <rdfs:subClassOf rdf:resource="#Dataset"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Sensor">
+    <owl:disjointWith rdf:resource="#Product_Type"/>
+    <owl:disjointWith rdf:resource="#Mission"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="hasSource">
+    <rdfs:domain rdf:resource="#Product_Type"/>
+    <rdfs:range rdf:resource="#Sensor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="pertainsToMission">
+    <rdfs:range rdf:resource="#Mission"/>
+    <rdfs:domain rdf:resource="#Sensor"/>
+  </owl:ObjectProperty>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="OrbView.SS1.SWF_L2B">
+    <rdf:type rdf:resource="#Product_Type"/>
+    <hasSource>
+      <Sensor rdf:ID="SeaWiFS">
+        <pertainsToMission>
+          <Mission rdf:ID="OrbView-2"/>
+        </pertainsToMission>
+      </Sensor>
+    </hasSource>
+  </DAP-S_V1.0_S3_P_003>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="OrbView.SS1.SWF_L2C">
+    <rdf:type rdf:resource="#Product_Type"/>
+    <hasSource rdf:resource="#SeaWiFS"/>
+  </DAP-S_V1.0_S3_P_003>
+  <Sensor rdf:ID="AATSR">
+    <pertainsToMission>
+      <Mission rdf:ID="ENVISAT"/>
+    </pertainsToMission>
+  </Sensor>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="OrbView.SS1.SWF_L2A">
+    <hasSource rdf:resource="#SeaWiFS"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_003>
+  <Sensor rdf:ID="MERIS">
+    <pertainsToMission rdf:resource="#ENVISAT"/>
+  </Sensor>
+  <Mission rdf:ID="ERS"/>
+  <Sensor rdf:ID="MWR">
+    <pertainsToMission rdf:resource="#ENVISAT"/>
+  </Sensor>
+  <Sensor rdf:ID="WS">
+    <pertainsToMission rdf:resource="#ERS"/>
+  </Sensor>
+  <DAP-S_V1.0_S3_P_004 rdf:ID="ATS_NR__2P">
+    <hasSource rdf:resource="#AATSR"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_004>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="MER_RR__2P">
+    <hasSource rdf:resource="#MERIS"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_003>
+  <DAP-S_V1.0_S3_P_004 rdf:ID="ATS_TOA_1P">
+    <hasSource rdf:resource="#AATSR"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S3_P_002"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_004>
+  <Sensor rdf:ID="ASAR">
+    <pertainsToMission rdf:resource="#ENVISAT"/>
+  </Sensor>
+  <DAP-S_V1.0_S3_P_001 rdf:ID="MER_FRS_1P">
+    <hasSource rdf:resource="#MERIS"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_001>
+  <DAP-S_V1.0_S1_P_012 rdf:ID="ASA_WSM_1P">
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_009"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_015"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_011"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_010"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_008"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_013"/>
+    <rdf:type rdf:resource="#DAP-S_V1.0_S1_P_014"/>
+    <hasSource rdf:resource="#ASAR"/>
+  </DAP-S_V1.0_S1_P_012>
+  <Mission rdf:ID="Terra-Aqua"/>
+  <DAP-S_V1.0_S3_P_002 rdf:ID="ERS.WSC.UWI">
+    <rdf:type rdf:resource="#Product_Type"/>
+    <hasSource rdf:resource="#WS"/>
+  </DAP-S_V1.0_S3_P_002>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="Terra-Aqua.MODIS.1B">
+    <hasSource>
+      <Sensor rdf:ID="MODIS">
+        <pertainsToMission rdf:resource="#Terra-Aqua"/>
+      </Sensor>
+    </hasSource>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_003>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="OrbView.SS1.SWF_L1A">
+    <rdf:type rdf:resource="#Product_Type"/>
+    <hasSource rdf:resource="#SeaWiFS"/>
+  </DAP-S_V1.0_S3_P_003>
+  <Sensor rdf:ID="RA2">
+    <pertainsToMission rdf:resource="#ENVISAT"/>
+  </Sensor>
+  <DAP-S_V1.0_S3_P_005 rdf:ID="RA2_FGD_2P">
+    <hasSource rdf:resource="#RA2"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_005>
+  <DAP-S_V1.0_S3_P_003 rdf:ID="MER_RR__1P">
+    <hasSource rdf:resource="#MERIS"/>
+    <rdf:type rdf:resource="#Product_Type"/>
+  </DAP-S_V1.0_S3_P_003>
+  <DAP-S_V1.0_S3_P_004 rdf:ID="ATS_AR__2P">
+    <rdf:type rdf:resource="#Product_Type"/>
+    <hasSource rdf:resource="#AATSR"/>
+  </DAP-S_V1.0_S3_P_004>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

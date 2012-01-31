@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wcs:Capabilities updateSequence="20110719T130000Z" version="2.0.0"
+                  xmlns:gml="http://www.opengis.net/gml/3.2"
+                  xmlns:gmlcov="http://www.opengis.net/gmlcov/1.0"
+                  xmlns:ogc="http://www.opengis.net/ogc"
+                  xmlns:ows="http://www.opengis.net/ows/2.0"
+                  xmlns:swe="http://www.opengis.net/swe/2.0"
+                  xmlns:wcs="http://www.opengis.net/wcs/2.0"
+                  xmlns:wcseo="http://www.opengis.net/wcseo/1.0"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.opengis.net/wcseo/1.0 http://schemas.opengis.net/wcseo/1.0/wcsEOAll.xsd">
+  <ows:ServiceIdentification>
+    <ows:Title>SMAAD GIM WCS</ows:Title>
+    <ows:Abstract>
+SMAAD GIM WCS
+</ows:Abstract>
+    <ows:Keywords>
+      <ows:Keyword>EO-WCS</ows:Keyword>
+      <ows:Keyword>WCS EO-AP</ows:Keyword>
+      <ows:Keyword>WCS 2.0</ows:Keyword>
+      <ows:Keyword>WCS</ows:Keyword>
+      <ows:Keyword>MERIS</ows:Keyword>
+      <ows:Keyword>Envisat</ows:Keyword>
+    </ows:Keywords>
+    <ows:ServiceType codeSpace="OGC">OGC WCS</ows:ServiceType>
+    <ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+    <ows:Profile>http://www.opengis.net/spec/WCS_application-profile_earth-observation/1.0/conf/eowcs</ows:Profile><ows:Profile>http://www.opengis.net/spec/WCS_application-profile_earth-observation/1.0/conf/eowcs_get-kvp</ows:Profile><ows:Profile>http://www.opengis.net/spec/WCS/2.0/conf/core</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_protocol-binding_get-kvp/1.0/conf/get-kvp</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_protocol-binding_post-xml/1.0/conf/post-xml</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_service-model_crs-predefined/1.0/conf/crs-predefined</ows:Profile>
+    <ows:Profile>http://www.placeholder.com/IMAGECRS</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_encoding_geotiff/1.0/conf/geotiff</ows:Profile>
+    <ows:Profile>http://www.placeholder.com/GML_and_GeoTIFF</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_service-model_scaling+interpolation/1.0/conf/scaling+interpolation</ows:Profile>
+    <ows:Profile>http://www.opengis.net/spec/WCS_service-model_band-subsetting/1.0/conf/band-subsetting</ows:Profile>
+    <ows:Fees>None</ows:Fees>
+    <ows:AccessConstraints>None</ows:AccessConstraints>
+  </ows:ServiceIdentification>
+  <ows:ServiceProvider>
+    <ows:ProviderName>GIM nv</ows:ProviderName>
+    <ows:ProviderSite xlink:href="http://www.gim.be" xlink:type="simple"/>
+    <ows:ServiceContact>
+      <ows:IndividualName>Steven Smolders</ows:IndividualName>
+      <ows:PositionName>Senior IT Consultant</ows:PositionName>
+      <ows:ContactInfo>
+        <ows:Phone>
+          <ows:Voice>Provided on request</ows:Voice>
+          <ows:Facsimile>None</ows:Facsimile>
+        </ows:Phone>
+        <ows:Address>
+          <ows:DeliveryPoint>Interleuvenlaan 5</ows:DeliveryPoint>
+          <ows:City>Brussels</ows:City>
+          <ows:AdministrativeArea>Flanders</ows:AdministrativeArea>
+          <ows:PostalCode>3000</ows:PostalCode>
+          <ows:Country>Belgium</ows:Country>
+          <ows:ElectronicMailAddress>support@gim.be</ows:ElectronicMailAddress>
+        </ows:Address>
+        <ows:OnlineResource xlink:href="http://www.gim.be" xlink:type="simple"/>
+        <ows:HoursOfService>Mon - Fri 10:30 - 17:00 CET and CEST respectively </ows:HoursOfService>
+        <ows:ContactInstructions>E-mails are usually answered within 3 working days.</ows:ContactInstructions>
+      </ows:ContactInfo>
+      <ows:Role>Service provider</ows:Role>
+    </ows:ServiceContact>
+  </ows:ServiceProvider>
+  <ows:OperationsMetadata>
+    <ows:Operation name="GetCapabilities">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple"/>
+          <ows:Post xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple">
+            <ows:Constraint name="PostEncoding">
+              <ows:AllowedValues>
+                <ows:Value>XML</ows:Value>
+              </ows:AllowedValues>
+            </ows:Constraint>
+          </ows:Post>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="DescribeCoverage">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple"/>
+          <ows:Post xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple">
+            <ows:Constraint name="PostEncoding">
+              <ows:AllowedValues>
+                <ows:Value>XML</ows:Value>
+              </ows:AllowedValues>
+            </ows:Constraint>
+          </ows:Post>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+    <ows:Operation name="GetCoverage">
+      <ows:DCP>
+        <ows:HTTP>
+          <ows:Get xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple"/>
+          <ows:Post xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple">
+            <ows:Constraint name="PostEncoding">
+              <ows:AllowedValues>
+                <ows:Value>XML</ows:Value>
+              </ows:AllowedValues>
+            </ows:Constraint>
+          </ows:Post>
+        </ows:HTTP>
+      </ows:DCP>
+    </ows:Operation>
+  <ows:Operation name="DescribeEOCoverageSet"><ows:DCP><ows:HTTP><ows:Get xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple"/><ows:Post xlink:href="http://www.gim.be/geoserver/wcs?" xlink:type="simple"/></ows:HTTP></ows:DCP></ows:Operation><ows:Constraint name="CountDefault"><ows:NoValues/><ows:DefaultValue>100</ows:DefaultValue></ows:Constraint></ows:OperationsMetadata>
+  <wcs:ServiceMetadata/>
+  <wcs:Contents><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20080901_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20080801_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20090801_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20080701_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20090701_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20100901_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20100801_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20100701_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20090901_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20060701_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20070901_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20060901_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20070701_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20060801_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcs:CoverageSummary><wcs:CoverageId>L3_ENV_MER_MGVI_m__20070801_GLOB_SI_ESA</wcs:CoverageId><wcs:CoverageSubtype>RectifiedDataset</wcs:CoverageSubtype></wcs:CoverageSummary><wcseo:DatasetSeriesSummary><ows:WGS84BoundingBox><ows:LowerCorner>-180.000000 -90.000000</ows:LowerCorner><ows:UpperCorner>180.000000 90.000000</ows:UpperCorner></ows:WGS84BoundingBox><wcseo:DatasetSeriesId>MERIS_MGVI</wcseo:DatasetSeriesId><gml:TimePeriod gml:id="MERIS_MGVI_timeperiod"><gml:beginPosition>2008-07-01T00:00:00</gml:beginPosition><gml:endPosition>2010-09-30T23:59:59</gml:endPosition></gml:TimePeriod></wcseo:DatasetSeriesSummary><wcseo:DatasetSeriesSummary><ows:WGS84BoundingBox><ows:LowerCorner>-89.560547 -30.541992</ows:LowerCorner><ows:UpperCorner>-20.654297 19.028320</ows:UpperCorner></ows:WGS84BoundingBox><wcseo:DatasetSeriesId>MER_FRS_RGB</wcseo:DatasetSeriesId><gml:TimePeriod gml:id="MER_FRS_RGB_timeperiod"><gml:beginPosition>2009-07-01T00:00:00</gml:beginPosition><gml:endPosition>2009-09-30T23:59:59</gml:endPosition></gml:TimePeriod></wcseo:DatasetSeriesSummary><wcseo:DatasetSeriesSummary><ows:WGS84BoundingBox><ows:LowerCorner>-80.068359 -20.039062</ows:LowerCorner><ows:UpperCorner>-39.990234 10.019531</ows:UpperCorner></ows:WGS84BoundingBox><wcseo:DatasetSeriesId>MER_FRS</wcseo:DatasetSeriesId><gml:TimePeriod gml:id="MER_FRS_timeperiod"><gml:beginPosition>2009-07-01T00:00:00</gml:beginPosition><gml:endPosition>2009-09-30T23:59:59</gml:endPosition></gml:TimePeriod></wcseo:DatasetSeriesSummary></wcs:Contents>
+</wcs:Capabilities>

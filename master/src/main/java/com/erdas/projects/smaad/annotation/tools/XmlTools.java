@@ -3,11 +3,6 @@ package com.erdas.projects.smaad.annotation.tools;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
-/**
-Static class to get NodeValue
-
-*/
-
 public class XmlTools {
 
 	public static String getNodeValue(Element parent, String ns, String tag) {

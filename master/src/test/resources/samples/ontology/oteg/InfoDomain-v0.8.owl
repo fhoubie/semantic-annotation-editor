@@ -1,0 +1,326 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://oteg.esa.int/infodomain-v1.0.owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xml:base="http://oteg.esa.int/infodomain-v1.0.owl">
+  <owl:Ontology rdf:about=""/>
+  <owl:Class rdf:ID="Oil_pollution">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Offshore_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Marine_pollution"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wind_speed">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Wind"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Turbidity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Marine_pollution"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Water_index"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Soil">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Agriculture"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Climate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Land_monitoring"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Agriculture">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Land_monitoring"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Offshore_environment">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Marine_environment"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Land_monitoring">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Information_Domain"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Land_use">
+    <rdfs:subClassOf rdf:resource="#Agriculture"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Urban_and_industry"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_nitrates">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Ground_water"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ocean_level">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Offshore_environment"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Land_surface_temperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Global_temperature"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Agriculture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Algal_bloom">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Eutrophication"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_triclosan">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Surface_water"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wave_climate">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Offshore_environment"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ocean_surface_monitoring">
+    <rdfs:subClassOf rdf:resource="#Offshore_environment"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Marine_pollution">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Marine_environment"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Land_cover">
+    <rdfs:subClassOf rdf:resource="#Land_use"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Topography"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Sea_surface_temperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Water_temperature"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Wave_climate"/>
+    <rdfs:subClassOf rdf:resource="#Ocean_surface_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ice_change_detection">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Climate_change"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Sea_ice"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Eutrophication">
+    <rdfs:subClassOf rdf:resource="#Marine_pollution"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ship_monitoring">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Operational_oceanography"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Topography">
+    <rdfs:subClassOf rdf:resource="#Land_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Wind_direction">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Wind"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Yellow_substance">
+    <rdfs:subClassOf rdf:resource="#Algal_bloom"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_salinity">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Water_index"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Wind">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Meteorological_data"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Water_index">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Water_quality_monitoring"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Operational_oceanography"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Ice_navigational_aid">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Sea_ice"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wind_stress">
+    <rdfs:subClassOf rdf:resource="#Wind"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Climate_change">
+    <rdfs:subClassOf rdf:resource="#Climate"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Water_quality_monitoring">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Global_temperature">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Weather"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Climate_change"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Sea_ice">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Coastal_environment"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Operational_oceanography"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Wind_gust">
+    <rdfs:subClassOf rdf:resource="#Wind"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Tide_monitoring">
+    <rdfs:subClassOf rdf:resource="#Ocean_level"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Operational_oceanography"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Ocean_surface_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Urban_and_industry">
+    <rdfs:subClassOf rdf:resource="#Land_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Water_temperature">
+    <rdfs:subClassOf rdf:resource="#Water_index"/>
+    <rdfs:subClassOf rdf:resource="#Wave_climate"/>
+    <rdfs:subClassOf rdf:resource="#Ocean_surface_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ice_classification">
+    <rdfs:subClassOf rdf:resource="#Sea_ice"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_metals">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Ground_water"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Phytoplankton">
+    <rdfs:subClassOf rdf:resource="#Algal_bloom"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Surface_water">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Water_management"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Topography"/>
+    <rdfs:subClassOf rdf:resource="#Agriculture"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Weather">
+    <rdfs:subClassOf rdf:resource="#Climate"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Coastal_environment">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Marine_environment"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Cloud">
+    <rdfs:subClassOf rdf:resource="#Agriculture"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Meteorological_data"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:about="#Meteorological_data">
+    <rdfs:subClassOf rdf:resource="#Wave_climate"/>
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Operational_oceanography"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Weather"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ice_thickness_classification">
+    <rdfs:subClassOf rdf:resource="#Sea_ice"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Ocean_colour">
+    <rdfs:subClassOf>
+      <owl:Class rdf:ID="Suspended_particulate_material"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Phytoplankton"/>
+    <rdfs:subClassOf rdf:resource="#Yellow_substance"/>
+    <rdfs:subClassOf rdf:resource="#Ocean_surface_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pressure">
+    <rdfs:subClassOf rdf:resource="#Water_index"/>
+    <rdfs:subClassOf rdf:resource="#Wave_climate"/>
+    <rdfs:subClassOf rdf:resource="#Ocean_surface_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_organic_micropollutants">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Ground_water"/>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:Class rdf:ID="Greenhouse_gas_concentration">
+    <rdfs:subClassOf rdf:resource="#Climate_change"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Suspended_particulate_material">
+    <rdfs:subClassOf rdf:resource="#Water_index"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Ground_water">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Water_management"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Soil"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Marine_environment">
+    <rdfs:subClassOf rdf:resource="#Information_Domain"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_use">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="#Water_management"/>
+    </rdfs:subClassOf>
+    <rdfs:subClassOf rdf:resource="#Agriculture"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_oxygen_consuming_substances">
+    <rdfs:subClassOf rdf:resource="#Surface_water"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Operational_oceanography">
+    <rdfs:subClassOf rdf:resource="#Marine_environment"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Water_pollution_by_hormones">
+    <rdfs:subClassOf rdf:resource="#Surface_water"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Digital_elevation_model">
+    <rdfs:subClassOf rdf:resource="#Topography"/>
+  </owl:Class>
+  <owl:Class rdf:about="#Water_management">
+    <rdfs:subClassOf rdf:resource="#Land_monitoring"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Forest">
+    <rdfs:subClassOf rdf:resource="#Land_cover"/>
+    <rdfs:subClassOf rdf:resource="#Climate_change"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Biochemical_oxygen_demand">
+    <rdfs:subClassOf rdf:resource="#Water_pollution_by_oxygen_consuming_substances"/>
+  </owl:Class>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.3.1, Build 430)  http://protege.stanford.edu -->

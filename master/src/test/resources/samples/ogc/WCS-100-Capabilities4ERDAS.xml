@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<WCS_Capabilities version="1.0.0" updateSequence="20110719T130000Z" xmlns="http://www.opengis.net/wcs" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wcs http://schemas.opengis.net/wcs/1.0.0/wcsCapabilities.xsd">
+<Service>
+  <name/>
+  <label>GIM WCS SMAAD</label>
+  <keywords>
+    <keyword>EO-WCS</keyword>
+    <keyword>WCS EO-AP</keyword>
+    <keyword>WCS 2.0</keyword>
+    <keyword>WCS</keyword>
+    <keyword>MERIS</keyword>
+    <keyword>Envisat</keyword>
+  </keywords>
+<responsibleParty>
+    <individualName>Steven Smolders</individualName>
+    <organisationName>GIM nv</organisationName>
+    <positionName>Senior IT Consultant</positionName>
+  <contactInfo>
+    <phone>
+    <voice>Provided on request</voice>
+    <facsimile>None</facsimile>
+    </phone>
+    <address>
+    <deliveryPoint>Interleuvenlaan5</deliveryPoint>
+    <city>Heverlee</city>
+    <administrativeArea>Flanders</administrativeArea>
+    <postalCode>3000</postalCode>
+    <country>Belgium</country>
+    <electronicMailAddress>support@gim.be</electronicMailAddress>
+    </address>
+    <onlineResource xlink:type="simple" xlink:href="http://www.gim.be"/>
+  </contactInfo>
+</responsibleParty>
+  <fees>None</fees>
+  <accessConstraints>
+    None
+  </accessConstraints>
+</Service>
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <DescribeCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Post>
+        </HTTP>
+      </DCPType>
+    </DescribeCoverage>
+    <GetCoverage>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Get>
+        </HTTP>
+      </DCPType>
+      <DCPType>
+        <HTTP>
+          <Post><OnlineResource xlink:type="simple" xlink:href="http://www.gim.be/geoserver/wcs?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCoverage>
+  </Request>
+  <Exception>
+    <Format>application/vnd.ogc.se_xml</Format>
+  </Exception>
+</Capability>
+<ContentMetadata>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20080901_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20080901_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20080801_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20080801_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20090801_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20090801_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20080701_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20080701_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20090701_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20090701_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20100901_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20100901_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20100801_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20100801_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20100701_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20100701_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20090901_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20090901_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20060701_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20060701_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20070901_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20070901_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20060901_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20060901_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20070701_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20070701_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20060801_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20060801_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+  <CoverageOfferingBrief>
+    <name>L3_ENV_MER_MGVI_m__20070801_GLOB_SI_ESA</name>
+    <label>L3_ENV_MER_MGVI_m__20070801_GLOB_SI_ESA</label>
+    <lonLatEnvelope srsName="urn:ogc:def:crs:OGC:1.3:CRS84">
+      <gml:pos>-180 -90</gml:pos>
+      <gml:pos>180 90</gml:pos>
+    </lonLatEnvelope>
+  </CoverageOfferingBrief>
+</ContentMetadata>
+</WCS_Capabilities>

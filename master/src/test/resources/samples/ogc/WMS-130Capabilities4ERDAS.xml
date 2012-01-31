@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<WMS_Capabilities version="1.3.0" updateSequence="20110719T130000Z" xmlns="http://www.opengis.net/wms" xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ms="http://mapserver.gis.umn.edu/mapserver" xsi:schemaLocation="http://www.opengis.net/wms http://schemas.opengis.net/wms/1.3.0/capabilities_1_3_0.xsd">
+<Service>
+  <Name>WMS</Name>
+  <Title>Test WMS Server for SMAAD GSTP Project  GIM </Title>
+  <Abstract>
+est WMS Server for SMAAD GSTP Project  GIM
+</Abstract>
+        <KeywordList>
+          <Keyword>MERIS</Keyword>
+          <Keyword>Envisat</Keyword>
+        </KeywordList>
+  <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.gim.be"/>
+  <ContactInformation>
+    <ContactPersonPrimary>
+      <ContactPerson>Steven Smolders</ContactPerson>
+      <ContactOrganization>GIM nv</ContactOrganization>
+    </ContactPersonPrimary>
+      <ContactPosition>Senior IT Consultant</ContactPosition>
+    <ContactAddress>
+        <AddressType>postal</AddressType>
+        <Address>Interleuvenlaan 5</Address>
+        <City>Heverlee</City>
+        <StateOrProvince>Flanders</StateOrProvince>
+        <PostCode>3000</PostCode>
+        <Country>Heverlee</Country>
+    </ContactAddress>
+      <ContactVoiceTelephone>Provided on request</ContactVoiceTelephone>
+      <ContactFacsimileTelephone>None</ContactFacsimileTelephone>
+  <ContactElectronicMailAddress>support@gim.be</ContactElectronicMailAddress>
+  </ContactInformation>
+  <Fees>None</Fees>
+  <AccessConstraints>None</AccessConstraints>
+  <MaxWidth>2049</MaxWidth>
+  <MaxHeight>2049</MaxHeight>
+</Service>
+
+<Capability>
+  <Request>
+    <GetCapabilities>
+      <Format>text/xml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetCapabilities>
+    <GetMap>
+      <Format>image/png</Format>
+      <Format>image/jpeg</Format>
+      <Format>image/gif</Format>
+      <Format>image/png; mode=8bit</Format>
+      <Format>image/tiff</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetMap>
+    <GetFeatureInfo>
+      <Format>text/plain</Format>
+      <Format>application/vnd.ogc.gml</Format>
+      <DCPType>
+        <HTTP>
+          <Get><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Get>
+          <Post><OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://einstein.gim.be/geoserver/wms?"/></Post>
+        </HTTP>
+      </DCPType>
+    </GetFeatureInfo>
+  </Request>
+  <Exception>
+    <Format>XML</Format>
+    <Format>INIMAGE</Format>
+    <Format>BLANK</Format>
+  </Exception>
+  <Layer>
+    <Name>Biopar</Name>
+    <Title>Biopar data of VITO</Title>
+    <Abstract>
+</Abstract>
+    <KeywordList>
+     <Keyword>geophysical environment</Keyword>
+     <Keyword>Orthoimagery</Keyword>
+    </KeywordList>
+    <CRS>EPSG:4326</CRS>
+    <CRS>EPSG:900913</CRS>
+    <EX_GeographicBoundingBox>
+        <westBoundLongitude>-1</westBoundLongitude>
+        <eastBoundLongitude>-1</eastBoundLongitude>
+        <southBoundLatitude>-1</southBoundLatitude>
+        <northBoundLatitude>-1</northBoundLatitude>
+    </EX_GeographicBoundingBox>
+    <BoundingBox CRS="EPSG:4326" minx="-1" miny="-1" maxx="-1" maxy="-1"/>
+     </Layer>
+</Capability>
+</WMS_Capabilities>

@@ -95,11 +95,16 @@ public abstract class BaseMetadataHandler implements MetadataHandler {
 		for (String pname : predecessors) {
 			nl = parent.getElementsByTagNameNS(ns, pname);
 			if (nl.getLength() > 0) {
-				
-				// Found, now get last and break the loop
-				
-				pred = (Element)nl.item(nl.getLength()-1);
-				break;
+                // Found, now get last node just below the parent node and break the loop
+                for (int i =0 ; i < nl.getLength();i++) {
+                    Node node = nl.item(i);
+                    if (node.getParentNode().getNodeName().equals(parent.getNodeName())) {
+                        pred = (Element) node;
+                    }
+                }
+                if (pred != null) {
+                    break;
+                }
 			}
 		}
 		

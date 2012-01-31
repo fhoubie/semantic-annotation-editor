@@ -21,7 +21,7 @@
 				<gmd:CI_Contact>
 					<gmd:address>
 						<gmd:CI_Address>
-							<gmd:electronicMailAddress><gco:CharacterString>eohelp@esa.int</gco:CharacterString></gmd:electronicMailAddress>
+							<gmd:electronicMailAddress>eohelp@esa.int</gmd:electronicMailAddress>
 						</gmd:CI_Address>
 					</gmd:address>
 				</gmd:CI_Contact>
@@ -97,7 +97,7 @@
 									<gmd:deliveryPoint>
 										<gco:CharacterString>Via Galileo Galilei CP. 64</gco:CharacterString>
 									</gmd:deliveryPoint>
-									<gmd:city><gco:CharacterString>Frascati</gco:CharacterString></gmd:city>
+									<gmd:city>Frascati</gmd:city>
 									<gmd:postalCode>00044</gmd:postalCode>
 									<gmd:country>Italy</gmd:country>
 									<gmd:electronicMailAddress>eohelp@esa.int</gmd:electronicMailAddress>

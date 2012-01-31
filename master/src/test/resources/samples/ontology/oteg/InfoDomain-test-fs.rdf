@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns="http://oteg.esa.int/infodomain-v1.0.owl#">
+	
+  <!-- Broader/Narrower definition -->
+  <skos:Concept rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate">
+    <skos:broader rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_monitoring"/>
+    <skos:narrower rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Climate_change"/>
+	<skos:narrower rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Weather"/>	
+  </skos:Concept>
+  
+  <skos:Concept rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Land_monitoring"/> 
+  <skos:Concept rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate_change"/>
+  <skos:Concept rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Weather"/>
+  <skos:Concept rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Land_surface_temperature"/>
+  
+  <!-- Related term definition -->
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate">
+    <skos:related rdf:resource="http://oteg.esa.int/infodomain-v1.0.owl#Land_surface_temperature"/>
+  </rdf:Description>
+  
+  <!-- Description of the concept -->
+  <rdf:Description rdf:about="http://oteg.esa.int/infodomain-v1.0.owl#Climate">
+    <skos:prefLabel xml:lang="en">Climate</skos:prefLabel>
+    <skos:definition xml:lang="en">Climate encompasses the temperatures, humidity, rainfall, atmospheric particle count and numerous other meteorogical factors in a given region over long periods of time.</skos:definition>
+  </rdf:Description>
+  
+</rdf:RDF>

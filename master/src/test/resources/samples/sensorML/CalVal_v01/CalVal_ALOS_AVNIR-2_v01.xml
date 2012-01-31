@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="./xslt/eo_document.xsl" version='1.0'?>
+<?oxygen RNGSchema="./schema/eo-instrument-calibration.rng" type="xml"?>
+<!--
+   *********************************** PURPOSE ***********************************
+   This descriptor provides with the values required to perform calibration / 
+   validation (CalVal) activities and that are relative to :
+      Mission :        ALOS
+      Instrument :   AVNIR-2
+   
+   ***************************** COPYRIGHT NOTICE *****************************
+   You may modify, distribute or copy this file provided that the present
+   notice is kept intact and the name of the initial developer(s) and all
+   contributors are preserved. Do not hesitate to contact the developers
+   for more information.
+
+   Initial Developers:
+      Alexandre Robin - Sensia Software LLC - <alex.robin@sensiasoftware.com>
+      Serge Riazanoff  - VisioTerra SARL          - <serge.riazanoff@visioterra.fr>
+
+   Contributors:   
+
+************************** HISTORY OF MODIFICATIONS ************************
+   2007-11-24: Creation of the first version
+  -->
+<sml:SensorML xmlns:sml="http://www.opengis.net/sensorML/1.0.1"
+   xmlns:swe="http://www.opengis.net/swe/1.0.1"
+   xmlns:gml="http://www.opengis.net/gml"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   version="1.0.1">
+   <!-- -->
+   <sml:member xlink:role="urn:x-esa:def:dictionary:ESA:documentRoles:v01#instrument_calibration">
+      <!-- -->
+      <sml:System gml:id="ALOS_AVNIR-2">
+         <!-- ================================================= -->
+         <!--                  System Description               -->
+         <!-- ================================================= -->
+         <gml:description>AVNIR-2 instrument on-board the Advanced Land Observing Satellite (ALOS)
+            is a high resolution imaging spectrometer operating in the visible and near-infrared spectrum. Data
+            are acquired through four multi-spectral bands with a 10 metres spatial resolution. This instrument
+            may be depointed across-track to get a viewing angle in the range [-44,+44] degrees.</gml:description>
+         <!-- ================================================= -->
+         <!--                  System Identifiers               -->
+         <!-- ================================================= -->
+         <sml:identification>
+            <sml:IdentifierList>
+               <sml:identifier name="System UID">
+                  <sml:Term definition="urn:x-esa:def:identifier:ESA:uuid">
+                     <sml:value>urn:x-esa:object:instrument:ESA:ALOS:AVNIR-2:v01</sml:value>
+                  </sml:Term>
+               </sml:identifier>
+               <sml:identifier name="Short Name">
+                  <sml:Term definition="urn:x-esa:def:identifier:ESA:shortName">
+                     <sml:value>AVNIR-2</sml:value>
+                  </sml:Term>
+               </sml:identifier>
+               <sml:identifier name="Long Name">
+                  <sml:Term definition="urn:x-esa:def:identifier:ESA:longName">
+                     <sml:value>Advanced Visible and Near Infrared Radiometer type 2</sml:value>
+                  </sml:Term>
+               </sml:identifier>
+               <sml:identifier name="Mission Name">
+                  <sml:Term definition="urn:x-esa:def:identifier:ESA:missionName">
+                     <sml:codeSpace xlink:href="urn:x-esa:def:dictionary:ESA:missionName:v01"/>
+                     <sml:value>ALOS</sml:value>
+                  </sml:Term>
+               </sml:identifier>
+            </sml:IdentifierList>
+         </sml:identification>
+         <!-- ================================================= -->
+         <!--                  System Classifiers               -->
+         <!-- ================================================= -->
+         <sml:classification>
+            <sml:ClassifierList>
+               <sml:classifier name="Instrument Type">
+                  <sml:Term definition="urn:x-esa:def:classifier:ESA:instrumentType">
+                     <sml:codeSpace xlink:href="urn:x-esa:def:dictionary:ESA:instrumentTypes:v01"/>
+                     <sml:value>Imaging Multispectral Radiometer</sml:value>
+                  </sml:Term>
+               </sml:classifier>
+               <sml:classifier name="Acquisition Method">
+                  <sml:Term definition="urn:x-esa:def:classifier:ESA:acquisitionMethod">
+                     <sml:codeSpace xlink:href="urn:x-esa:def:dictionary:ESA:acquisitionMethods:v01"/>
+                     <sml:value>Pushbroom</sml:value>
+                  </sml:Term>
+               </sml:classifier>
+            </sml:ClassifierList>
+         </sml:classification>
+         <!-- ================================================= -->
+         <!--       Temporal Validity of this description       -->
+         <!-- ================================================= -->
+         <sml:validTime>
+            <gml:TimePeriod>
+               <gml:beginPosition>2006-01-24T00:00:00Z</gml:beginPosition>
+               <gml:endPosition indeterminatePosition="now"/>
+            </gml:TimePeriod>
+         </sml:validTime>
+         <!-- ================================================= -->
+         <!--       Instrument Geometric Characteristics        -->
+         <!-- ================================================= -->
+         <sml:characteristics>
+            <swe:DataRecord>
+               <gml:name>Geometric Characteristics</gml:name>
+               <swe:field name="Swath Width at Nadir">
+                  <swe:Quantity definition="urn:x-esa:def:phenomenon:ESA:swathWidthAtNadir">
+                     <swe:uom code="km"/>
+                     <swe:value>70</swe:value>
+                  </swe:Quantity>
+               </swe:field>
+            </swe:DataRecord>
+         </sml:characteristics>
+         <!-- ================================================= -->
+         <!--      Instrument Measurement Characteristics       -->
+         <!-- ================================================= -->
+         <sml:characteristics>
+            <swe:DataRecord>
+               <gml:name>Measurement Characteristics</gml:name>
+               <swe:field name="Number of Bands">
+                  <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfBands">
+                     <gml:description>Number of bands of AVNIR-2 (Visible and Near Infrared).</gml:description>
+                     <swe:value>4</swe:value>
+                  </swe:Count>
+               </swe:field>
+            </swe:DataRecord>
+         </sml:characteristics>
+         <!-- ================================================= -->
+         <!--                  Relevant Contacts                -->
+         <!-- ================================================= -->
+         <sml:contact xlink:role="urn:x-esa:def:dictionary:ESA:contactTypes:v01#operator">
+            <sml:ResponsibleParty>
+               <sml:individualName>Takeo TADONO</sml:individualName>
+               <sml:organizationName>EORC-JAXA</sml:organizationName>
+               <sml:contactInfo>
+                  <sml:phone>
+                     <sml:voice>+81 29 868 2719</sml:voice>
+                  </sml:phone>
+                  <sml:address>
+                     <sml:deliveryPoint>2-1-1, Sengen, Tsukuba</sml:deliveryPoint>
+                     <sml:city>IBARAKI </sml:city>
+                     <sml:postalCode>305-8505</sml:postalCode>
+                     <sml:country>JAPAN</sml:country>
+                     <sml:electronicMailAddress>tadono.takeo@jaxa.jp</sml:electronicMailAddress>
+                  </sml:address>
+               </sml:contactInfo>
+            </sml:ResponsibleParty>
+         </sml:contact>
+         <!-- ================================================= -->
+         <!--                System Documentation               -->
+         <!-- ================================================= -->
+         <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook">
+            <sml:Document>
+               <gml:description>Page of the JAXA Website giving News about the ALOS mission.</gml:description>
+               <sml:onlineResource
+                  xlink:href="http://www.jaxa.jp/projects/sat/alos/index_e.html"/>
+            </sml:Document>
+         </sml:documentation>
+         <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook">
+            <sml:Document>
+               <gml:description>Page of the Earth Observation Research Center (EORC) Website describing the ALOS mission.</gml:description>
+               <sml:onlineResource
+                  xlink:href="http://www.eorc.jaxa.jp/ALOS/index.htm"/>
+            </sml:Document>
+         </sml:documentation>
+         <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook">
+            <sml:Document>
+               <gml:description>Page of the EORC-JAXA Website describing the AVNIR-2 Instrument.</gml:description>
+               <sml:onlineResource
+                  xlink:href="http://www.eorc.jaxa.jp/ALOS/about/avnir2.htm"/>
+            </sml:Document>
+         </sml:documentation>
+         <sml:documentation xlink:role="urn:x-esa:def:dictionary:ESA:documentTypes:v01#databook">
+            <sml:Document>
+               <gml:description>ALOS User handbook.</gml:description>
+               <sml:onlineResource
+                  xlink:href="http://www.eorc.jaxa.jp/ALOS/doc/alos_userhb_en.pdf"/>
+            </sml:Document>
+         </sml:documentation>
+         <!-- ================================================= -->
+         <!--                    System Inputs                  -->
+         <!-- ================================================= -->
+         <sml:inputs>
+            <sml:InputList>
+               <sml:input name="Radiation">
+                  <swe:ObservableProperty definition="urn:x-esa:def:phenomenon:ESA:radiation"/>
+               </sml:input>
+            </sml:InputList>
+         </sml:inputs>
+         <!-- ================================================= -->
+         <!--                   System Outputs                  -->
+         <!-- ================================================= -->
+         <sml:outputs>
+            <sml:OutputList>
+               <sml:output name="AVNIR-2">
+                  <swe:DataRecord gml:id="SCANLINE_DATA">
+                     <swe:field name="XS1_Band">
+                        <swe:DataArray gml:id="XS_BAND_DATA">
+                           <swe:elementCount>
+                              <swe:Count>
+                                 <swe:value>7000</swe:value>
+                              </swe:Count>
+                           </swe:elementCount>
+                           <swe:elementType name="Sample">
+                              <swe:Count definition="urn:x-esa:def:phenomenon:ESA:DN">
+                                 <swe:constraint>
+                                    <swe:AllowedValues>
+                                       <!-- 8-bits data -->
+                                       <swe:interval>0 255</swe:interval>
+                                    </swe:AllowedValues>
+                                 </swe:constraint>
+                              </swe:Count>
+                           </swe:elementType>
+                        </swe:DataArray>
+                     </swe:field>
+                     <swe:field name="XS2_Band" xlink:href="#XS_BAND_DATA"/>
+                     <swe:field name="XS3_Band" xlink:href="#XS_BAND_DATA"/>
+                     <swe:field name="XS4_Band" xlink:href="#XS_BAND_DATA"/>
+                  </swe:DataRecord>
+               </sml:output>
+            </sml:OutputList>
+         </sml:outputs>
+         <!-- -->
+         <sml:components>
+            <sml:ComponentList>
+               <!-- ================================================= -->
+               <!--          XS1 Band Description            -->
+               <!-- ================================================= -->
+               <sml:component name="XS1_Band">
+                  <sml:Component gml:id="XS1_BAND">
+                     <!-- -->
+                     <sml:identification>
+                        <sml:IdentifierList>
+                           <sml:identifier name="Short Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:shortName">
+                                 <sml:value>XS1</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                           <sml:identifier name="Long Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:longName">
+                                 <sml:value>Multispectral Band 1 - 0.42-0.50 um (Blue)</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                        </sml:IdentifierList>
+                     </sml:identification>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Geometric Characteristics</gml:name>
+                           <swe:field name="Across-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:acrossTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Along-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:alongTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Number of Samples">
+                              <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfSamples">
+                                 <swe:value>7000</swe:value>
+                              </swe:Count>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Measurement Characteristics</gml:name>
+                           <swe:field name="Central Wavelength">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:centralWavelength">
+                                 <swe:uom code="nm"/>
+                                 <!-- This value has been integrated from the spectral responses -->
+                                 <swe:value>463.03</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Spectral Response">
+                              <swe:Curve definition="urn:x-esa:def:data:ESA:spectralResponse">
+                                 <gml:description>Spectral Response given as a table of wavelength
+                                    vs. normalized power.</gml:description>
+                                 <swe:elementCount>
+                                    <swe:Count>
+                                       <swe:value>33</swe:value>
+                                    </swe:Count>
+                                 </swe:elementCount>
+                                 <swe:elementType>
+                                    <swe:SimpleDataRecord>
+                                       <swe:field name="Wavelength">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:wavelength">
+                                             <swe:uom code="nm"/>
+                                          </swe:Quantity>
+                                       </swe:field>
+                                       <swe:field name="Normalized Response">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:normalizedResponse"
+                                          />
+                                       </swe:field>
+                                    </swe:SimpleDataRecord>
+                                 </swe:elementType>
+                                 <swe:encoding>
+                                    <swe:TextBlock tokenSeparator=" " blockSeparator=" "
+                                       decimalSeparator="."/>
+                                 </swe:encoding>
+                                 <swe:values> 
+                                    390 0.00 395 0.00 400 0.00 405 0.01 410 0.03 415 0.13 420 0.40 425 0.67 430 0.72 435 0.73 
+                                    440 0.72 445 0.82 450 0.88 455 0.93 460 0.97 465 0.97 470 1.00 475 0.97 480 0.93 485 0.94 
+                                    490 0.98 495 0.94 500 0.58 505 0.21 510 0.07 515 0.02 520 0.01 525 0.00 530 0.00 535 0.00 
+                                    540 0.00 545 0.00 550 0.00 
+                                 </swe:values>
+                              </swe:Curve>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:parameters>
+                        <sml:ParameterList>
+                           <sml:parameter name="Overall Gain">
+                              <swe:Quantity definition="urn:x-esa:def:phenomenon:ESA:overallGain">
+                                 <!-- Not found -->
+                                 <swe:value>1.0</swe:value>
+                              </swe:Quantity>
+                           </sml:parameter>
+                        </sml:ParameterList>
+                     </sml:parameters>
+                  </sml:Component>
+               </sml:component>
+
+               <!-- ================================================= -->
+               <!--          XS2 Band Description            -->
+               <!-- ================================================= -->
+               <sml:component name="XS2_Band">
+                  <sml:Component gml:id="XS2_BAND">
+                     <!-- -->
+                     <sml:identification>
+                        <sml:IdentifierList>
+                           <sml:identifier name="Short Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:shortName">
+                                 <sml:value>XS2</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                           <sml:identifier name="Long Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:longName">
+                                 <sml:value>Multispectral Band 2 - 0.52-0.60 um (Green)</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                        </sml:IdentifierList>
+                     </sml:identification>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Geometric Characteristics</gml:name>
+                           <swe:field name="Across-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:acrossTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Along-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:alongTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Number of Samples">
+                              <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfSamples">
+                                 <swe:value>7000</swe:value>
+                              </swe:Count>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Measurement Characteristics</gml:name>
+                           <swe:field name="Central Wavelength">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:centralWavelength">
+                                 <swe:uom code="nm"/>
+                                 <!-- This value has been integrated from the spectral responses -->
+                                 <swe:value>560.01</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Spectral Response">
+                              <swe:Curve definition="urn:x-esa:def:data:ESA:spectralResponse">
+                                 <gml:description>Spectral Response given as a table of wavelength
+                                    vs. normalized power.</gml:description>
+                                 <swe:elementCount>
+                                    <swe:Count>
+                                       <swe:value>29</swe:value>
+                                    </swe:Count>
+                                 </swe:elementCount>
+                                 <swe:elementType>
+                                    <swe:SimpleDataRecord>
+                                       <swe:field name="Wavelength">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:wavelength">
+                                             <swe:uom code="nm"/>
+                                          </swe:Quantity>
+                                       </swe:field>
+                                       <swe:field name="Normalized Response">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:normalizedResponse"
+                                          />
+                                       </swe:field>
+                                    </swe:SimpleDataRecord>
+                                 </swe:elementType>
+                                 <swe:encoding>
+                                    <swe:TextBlock tokenSeparator=" " blockSeparator=" "
+                                       decimalSeparator="."/>
+                                 </swe:encoding>
+                                 <swe:values> 
+                                    485 0.00 490 0.00 495 0.00 500 0.00 505 0.02 510 0.07 515 0.20 520 0.44 525 0.68 530 0.74
+                                    535 0.77 540 0.84 545 0.87 550 0.87 555 0.90 560 0.95 565 0.98 570 1.00 575 0.98 580 0.89
+                                    585 0.78 590 0.75 595 0.69 600 0.44 605 0.16 610 0.04 615 0.01 620 0.00 625 0.00 
+                                 </swe:values>
+                              </swe:Curve>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:parameters>
+                        <sml:ParameterList>
+                           <sml:parameter name="Overall Gain">
+                              <swe:Quantity definition="urn:x-esa:def:phenomenon:ESA:overallGain">
+                                 <!-- Not found -->
+                                 <swe:value>1.0</swe:value>
+                              </swe:Quantity>
+                           </sml:parameter>
+                        </sml:ParameterList>
+                     </sml:parameters>
+                  </sml:Component>
+               </sml:component>
+               
+               <!-- ================================================= -->
+               <!--          XS3 Band Description            -->
+               <!-- ================================================= -->
+               <sml:component name="XS3_Band">
+                  <sml:Component gml:id="XS3_BAND">
+                     <!-- -->
+                     <sml:identification>
+                        <sml:IdentifierList>
+                           <sml:identifier name="Short Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:shortName">
+                                 <sml:value>XS3</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                           <sml:identifier name="Long Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:longName">
+                                 <sml:value>Multispectral Band 3 - 0.61-0.69 um (Red)</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                        </sml:IdentifierList>
+                     </sml:identification>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Geometric Characteristics</gml:name>
+                           <swe:field name="Across-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:acrossTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Along-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:alongTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Number of Samples">
+                              <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfSamples">
+                                 <swe:value>7000</swe:value>
+                              </swe:Count>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Measurement Characteristics</gml:name>
+                           <swe:field name="Central Wavelength">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:centralWavelength">
+                                 <swe:uom code="nm"/>
+                                 <!-- This value has been integrated from the spectral responses -->
+                                 <swe:value>652.09</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Spectral Response">
+                              <swe:Curve definition="urn:x-esa:def:data:ESA:spectralResponse">
+                                 <gml:description>Spectral Response given as a table of wavelength
+                                    vs. normalized power.</gml:description>
+                                 <swe:elementCount>
+                                    <swe:Count>
+                                       <swe:value>41</swe:value>
+                                    </swe:Count>
+                                 </swe:elementCount>
+                                 <swe:elementType>
+                                    <swe:SimpleDataRecord>
+                                       <swe:field name="Wavelength">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:wavelength">
+                                             <swe:uom code="nm"/>
+                                          </swe:Quantity>
+                                       </swe:field>
+                                       <swe:field name="Normalized Response">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:normalizedResponse"
+                                          />
+                                       </swe:field>
+                                    </swe:SimpleDataRecord>
+                                 </swe:elementType>
+                                 <swe:encoding>
+                                    <swe:TextBlock tokenSeparator=" " blockSeparator=" "
+                                       decimalSeparator="."/>
+                                 </swe:encoding>
+                                 <swe:values> 
+                                    545 0.00 550 0.00 555 0.00 560 0.00 565 0.00 570 0.00 575 0.01 580 0.01 585 0.02 590 0.03
+                                    595 0.06 600 0.14 605 0.28 610 0.49 615 0.66 620 0.78 625 0.80 630 0.80 635 0.80 640 0.86
+                                    645 0.94 650 0.98 655 1.00 660 0.99 665 0.93 670 0.88 675 0.84 680 0.83 685 0.81 690 0.68
+                                    695 0.42 700 0.20 705 0.09 710 0.04 715 0.02 720 0.01 725 0.01 730 0.00 735 0.00 740 0.00
+                                    745 0.00
+                                 </swe:values>
+                              </swe:Curve>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:parameters>
+                        <sml:ParameterList>
+                           <sml:parameter name="Overall Gain">
+                              <swe:Quantity definition="urn:x-esa:def:phenomenon:ESA:overallGain">
+                                 <!-- Not found -->
+                                 <swe:value>1.0</swe:value>
+                              </swe:Quantity>
+                           </sml:parameter>
+                        </sml:ParameterList>
+                     </sml:parameters>
+                  </sml:Component>
+               </sml:component>
+               
+               <!-- ================================================= -->
+               <!--          XS4 Band Description            -->
+               <!-- ================================================= -->
+               <sml:component name="XS4_Band">
+                  <sml:Component gml:id="XS4_BAND">
+                     <!-- -->
+                     <sml:identification>
+                        <sml:IdentifierList>
+                           <sml:identifier name="Short Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:shortName">
+                                 <sml:value>XS4</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                           <sml:identifier name="Long Name">
+                              <sml:Term definition="urn:x-esa:def:identifier:ESA:longName">
+                                 <sml:value>Multispectral Band 4 - 0.76-0.89 um (NIR)</sml:value>
+                              </sml:Term>
+                           </sml:identifier>
+                        </sml:IdentifierList>
+                     </sml:identification>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Geometric Characteristics</gml:name>
+                           <swe:field name="Across-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:acrossTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Along-Track Ground Sampling Distance at Nadir">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:alongTrackGSDAtNadir">
+                                 <swe:uom code="m"/>
+                                 <swe:value>10</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Number of Samples">
+                              <swe:Count definition="urn:x-esa:def:phenomenon:ESA:numberOfSamples">
+                                 <swe:value>7000</swe:value>
+                              </swe:Count>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:characteristics>
+                        <swe:DataRecord>
+                           <gml:name>Measurement Characteristics</gml:name>
+                           <swe:field name="Central Wavelength">
+                              <swe:Quantity
+                                 definition="urn:x-esa:def:phenomenon:ESA:centralWavelength">
+                                 <swe:uom code="nm"/>
+                                 <!-- This value has been integrated from the spectral responses -->
+                                 <swe:value>820.58</swe:value>
+                              </swe:Quantity>
+                           </swe:field>
+                           <swe:field name="Spectral Response">
+                              <swe:Curve definition="urn:x-esa:def:data:ESA:spectralResponse">
+                                 <gml:description>Spectral Response given as a table of wavelength
+                                    vs. normalized power.</gml:description>
+                                 <swe:elementCount>
+                                    <swe:Count>
+                                       <swe:value>61</swe:value>
+                                    </swe:Count>
+                                 </swe:elementCount>
+                                 <swe:elementType>
+                                    <swe:SimpleDataRecord>
+                                       <swe:field name="Wavelength">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:wavelength">
+                                             <swe:uom code="nm"/>
+                                          </swe:Quantity>
+                                       </swe:field>
+                                       <swe:field name="Normalized Response">
+                                          <swe:Quantity
+                                             definition="urn:x-esa:def:phenomenon:ESA:normalizedResponse"
+                                          />
+                                       </swe:field>
+                                    </swe:SimpleDataRecord>
+                                 </swe:elementType>
+                                 <swe:encoding>
+                                    <swe:TextBlock tokenSeparator=" " blockSeparator=" "
+                                       decimalSeparator="."/>
+                                 </swe:encoding>
+                                 <swe:values> 
+                                    700 0.00 705 0.00 710 0.00 715 0.00 720 0.00 725 0.00 730 0.00 735 0.01 740 0.03 745 0.07
+                                    750 0.16 755 0.31 760 0.57 765 0.88 770 1.00 775 0.98 780 0.93 785 0.89 790 0.86 795 0.86
+                                    800 0.89 805 0.94 810 0.95 815 0.96 820 0.92 825 0.87 830 0.82 835 0.75 840 0.71 845 0.67
+                                    850 0.64 855 0.63 860 0.62 865 0.62 870 0.58 875 0.59 880 0.59 885 0.55 890 0.50 895 0.39
+                                    900 0.25 905 0.13 910 0.07 915 0.04 920 0.02 925 0.01 930 0.00 935 0.00 940 0.00 945 0.00
+                                    950 0.00 955 0.00 960 0.00 965 0.00 970 0.00 975 0.00 980 0.00 985 0.00 990 0.00 995 0.00
+                                    1000 0.00
+                                 </swe:values>
+                              </swe:Curve>
+                           </swe:field>
+                        </swe:DataRecord>
+                     </sml:characteristics>
+                     <!-- -->
+                     <sml:parameters>
+                        <sml:ParameterList>
+                           <sml:parameter name="Overall Gain">
+                              <swe:Quantity definition="urn:x-esa:def:phenomenon:ESA:overallGain">
+                                 <!-- Not found -->
+                                 <swe:value>1.0</swe:value>
+                              </swe:Quantity>
+                           </sml:parameter>
+                        </sml:ParameterList>
+                     </sml:parameters>
+                  </sml:Component>
+               </sml:component>
+               
+            </sml:ComponentList>
+         </sml:components>
+      </sml:System>
+   </sml:member>
+</sml:SensorML>

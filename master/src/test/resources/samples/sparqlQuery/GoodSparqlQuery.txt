@@ -1,0 +1,120 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX gemet:<http://www.eionet.eu.int/gemet/2004/06/gemet-schema.rdf#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?x ?conceptLabel 
+WHERE {
+?x skos:prefLabel ?conceptLabel .
+FILTER (regex(str(?conceptLabel), "climate","i")) .
+}
+
+
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX gemet:<http://www.eionet.eu.int/gemet/2004/06/gemet-schema.rdf#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?x ?conceptLabel ?conceptDefinition
+WHERE {
+?x skos:prefLabel ?conceptLabel .
+?x skos:definition ?conceptDefinition
+}
+
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX gemet:<http://www.eionet.eu.int/gemet/2004/06/gemet-schema.rdf#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?x ?conceptLabel ?conceptDefinition
+WHERE {
+?x skos:prefLabel ?conceptLabel ;
+   skos:definition ?conceptDefinition
+}
+
+----
+Get all concepts in OTEG that are related to the "climate" concept in GEMET
+----
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?y ?x ?label 
+WHERE {
+?x skos:prefLabel ?label .
+?x skos:related ?y .
+FILTER (regex(str(?label), "climate","i")) .
+FILTER (regex(str(?y), "http://oteg.esa.int/infodomain-v1.0.owl")) .
+FILTER (regex(str(?x), "http://www.eionet.europa.eu/gemet/concept/")) .
+}
+
+
+----
+Get all concepts in GEMET that are related to the "climate" concept in OTEG
+----
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT DISTINCT ?y ?x ?label 
+WHERE {
+?x skos:prefLabel ?label .
+?x skos:related ?y .
+FILTER (regex(str(?label), "climate","i")) .
+FILTER (regex(str(?x), "http://oteg.esa.int/infodomain-v1.0.owl")) .
+FILTER (regex(str(?y), "http://www.eionet.europa.eu/gemet/concept/")) .
+}
+
+
+-------------------
+INSPIRE theme query
+-------------------
+
+-- GET all the INSPIRE THEME concepts with their english title and english definition order by ascending title.
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT DISTINCT ?x ?title ?definition
+ FROM   <file://C:/fakepath/inspire-theme.rdf>
+ WHERE { ?x skos:prefLabel ?title ;
+        FILTER langMatches( lang(?title), "EN" ) .
+	?x skos:definition ?definition ;
+	FILTER langMatches( lang(?definition), "EN" ) . 
+ }
+ ORDER BY ASC (?title)  
+ 
+
+-- GET the concepts whose label is like "Addresses" with case insensitive
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?x ?label 
+WHERE {
+?x skos:prefLabel ?label .
+FILTER (regex(str(?label), "Addresses","i")) .
+}
+
+-- GET the concepts whose label is equal to "Addresses" in English
+ 
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?x
+WHERE {
+?x skos:prefLabel "Addresses"@en
+}
+
+-- GET the concepts whose label is equal to "Adresses" in French
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+SELECT ?x
+WHERE {
+?x skos:prefLabel "Adresses"@fr
+}
+
+
+
