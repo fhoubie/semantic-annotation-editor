@@ -1,4 +1,4 @@
-/home/mpescher/SQC/xmlParserAPIs.jar:/home/mpescher/SQC/xercesImpl.jar:/home/mpescher/SQC/xschemaREC.jar:/home/mpescher/SQC/xml4j.jar:/home/mpescher/SQC/mofrt.jar
+/home/mpescher/SQC/xmlParserAPIs.jar:/home/mpescher/SQC/xercesImpl.jar:/home/mpescher/SQC/xschemaREC.jar:/home/mpescher/SQC/xml4j.jar:/home/mpescher/SQC/mofrt.jar
 /usr/local/j2sdk/lib/tools.jar
 Initializing Schema Quality Checker. Please wait ...
 SchemaQualityChecker has been initialized

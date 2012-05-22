@@ -1897,19 +1897,21 @@ public class SemanticAnnotationService extends HttpServlet {
 		
 		searchTerm = URLEncoder.encode(searchTerm, "UTF-8");
 		
-		logger_.info("RDF OpenSearch search: '" + searchTerm + "' (lang=" + lang + ", max="+maxResults+", url="+ urlTemplate + ")");
+		logger_.info("RDF OpenSearch search: '" + searchTerm + "' (lang=" + lang + ", max="+maxResults+", urlTemplate="+ urlTemplate + ")");
 		
 		// Change known parameters
 		
 		url = urlTemplate.replace(SEARCH_TERMS_PARAM_TAG, searchTerm)
 				.replace(LANGUAGE_PARAM_TAG, lang)
 				.replace(MAX_RESULTS_PARAM_TAG, Integer.toString(maxResults));
-		
+
+
+
 		// Clear all other parameters
 		
 		url = url.replaceAll(OPEN_SEARCH_PARAM_TAG, "");
 				
-		logger_.debug("Search url: " + url);
+		logger_.info("Search url: " + url);
 		
 		HttpGet httpget = new HttpGet(url);
 		httpget.addHeader("content-type","application/x-www-form-urlencoded");

@@ -55,9 +55,8 @@ public class SensorMLHandler extends BaseMetadataHandler {
 
 	final static String[] KEYWORDS_PREDECESSORS = {
 		BOUNDED_BY_TAG,
-		DESCRIPTION_TAG,
-        NAME_TAG
-
+		NAME_TAG,
+		DESCRIPTION_TAG
 	};
 	// Classes
 	

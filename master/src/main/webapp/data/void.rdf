@@ -14,6 +14,20 @@
 		<void:rootResource rdf:resource="http://www.eionet.europa.eu/gemet/concept/3650"/>
 		<void:dataDump rdf:resource="http://www.eionet.europa.eu/openrdf-workbench/repositories/SMAAD/export"/>
 	</void:Dataset>
+	<void:Dataset rdf:about="http://www.eionet.europa.eu/gemet/">
+		<dcterms:title>GEMET (SPARQL)</dcterms:title>		
+		<dcterms:description>GEMET (for testing)</dcterms:description>
+		<void:sparqlEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-sesame/repositories/SMAAD"/>
+		<!--
+		<void:openSearchDescription rdf:resource="http://projects-eu.erdas.com/epf-proxy/opensearch.jsp?Ontology=GEMET"/>
+		<void:openSearchDescription rdf:resource="http://localhost:8080/smaad-annotation-core/opensearch.jsp"/>
+		-->
+		<void:uriLookupEndpoint rdf:resource="http://projects-eu.erdas.com/openrdf-workbench/repositories/SMAAD/explore?resource="/>
+		<void:uriSpace>http://www.eionet.europa.eu/gemet/</void:uriSpace>
+		<void:uriRegexPattern>^http://www.eionet.europa.eu/gemet/.*</void:uriRegexPattern>
+		<void:rootResource rdf:resource="http://www.eionet.europa.eu/gemet/concept/3650"/>
+		<void:dataDump rdf:resource="http://www.eionet.europa.eu/openrdf-workbench/repositories/SMAAD/export"/>
+	</void:Dataset>
 	<!-- OTEG Erdas for testing -->
 	<void:Dataset rdf:about="http://oteg.esa.int">
 		<dcterms:title>OTEG (for testing)</dcterms:title>		

@@ -337,7 +337,10 @@
 	
 			uploader = new this.Uploader({boundingBox:"#uploaderOverlay", swfURL : com.erdas.smaad.baseUrl + "js/yui_3.2.0/uploader/assets/uploader.swf"});
 			uploader.set("simLimit", 1);
-			
+			uploader.set("multiFiles", true);
+			uploader.set("simLimit", 3);
+            uploader.set("log", true);
+
 			uploader.on("uploaderReady", com.erdas.smaad.setupUploader);
 			uploader.on("fileselect", com.erdas.smaad.fileSelect);
 			uploader.on("uploadprogress", com.erdas.smaad.updateProgress);
@@ -418,10 +421,10 @@
 		
 
 		setupUploader : function (event) {
-			com.erdas.smaad.uploader.set("multiFiles", true);
-			com.erdas.smaad.uploader.set("simLimit", 3);
-			com.erdas.smaad.uploader.set("log", true);
-			
+//			com.erdas.smaad.uploader.set("multiFiles", true);
+//			com.erdas.smaad.uploader.set("simLimit", 3);
+//			com.erdas.smaad.uploader.set("log", true);
+//
 		},
 
 		fileSelect : function (event) {
@@ -555,7 +558,7 @@
 					success: com.erdas.smaad.conceptResolved,
 					failure: com.erdas.smaad.displayResolveError
 				},
-		        timeout: 60000,
+		        timeout: 60000
 		    });
 		},
 		
@@ -590,13 +593,11 @@
 				
 			var focusDiv = com.erdas.smaad.Y.one("#smaad\\.focusConceptDiv");
 			focusDiv.removeClass('error');
-			
 			if (concept == undefined) {
 				focusDiv.setContent("&lt;no concept selected&gt;");
 			} else {
 		    	var uris = '"' + concept.URI + '"';		    	
 		    	var tmp = "";
-		    	
 		    	tmp += "<div class='sectionContent'><div class='conceptName' title='Concept URI: " + concept.URI +"'>";
 		    	tmp +=concept.label;
 		    	tmp += "&nbsp;<a class='smallButton' href='#' onclick='com.erdas.smaad.addConceptUri(" + uris + ")'>Add</a>"
@@ -609,7 +610,11 @@
 		    	} 
 		    	tmp +="</div>";
 		    	tmp +="<div class='conceptPropertyDiv'>";
-		    	tmp +="<span class='conceptPropertyName'>Groups:</span>";
+		    	tmp +="<br><span class='conceptPropertyName'>Thesaurus:</span>";
+		    	tmp +="<span class='conceptPropertyValue'>";
+		    	tmp += concept.thesaurus.displayName;
+		    	tmp +="</span>";
+		    	tmp +="<br><span class='conceptPropertyName'>Groups:</span>";
 		    	tmp +="<span class='conceptPropertyValue'>";
 		    	for (var id in concept.groups) {
 		    		tmp += " " + concept.groups[id].label;
@@ -771,6 +776,8 @@
 			    	
 			    	tmp += "<div class='sectionContent selectedConcept'><div class='conceptName'><span title='Click to focus on' onclick='com.erdas.smaad.selectConceptByUri(" + uris + ")'>";
 			    	tmp +=concept.label;
+   			    	tmp +=" (" + concept.thesaurus+ ")";
+
 			    	tmp += "</span>&nbsp;<a class='smallButton' href='#' onclick='com.erdas.smaad.removeConcept(" + uris + ")'>Remove</a>"
 			    	tmp +="</div>";
 			    	tmp +="</div>";
@@ -809,11 +816,13 @@
 			    	var concept = concepts[id];
 			    	var uris = '"' + concept.URI + '"';
 			    	var tmp = "";
-			    	
+                    concept.thesaurus=  com.erdas.smaad.Y.one("#smaad\\.thesaurusSelect").get('value');
+
 			    	com.erdas.smaad.searchResults[concept.URI] = concept;
 			    	
 			    	tmp += "<div class='sectionContent searchResult'><div class='conceptName' onClick='com.erdas.smaad.selectConceptByUri(" + uris +")' title='Concept URI: " + concept.URI + "'>";
 			    	tmp +=concept.label;
+
 			    	tmp += "&nbsp;<a class='smallButton' href='#' onclick='com.erdas.smaad.addConceptUri(" + uris + ")'>Add</a>"
 			    	tmp +="</div>";
 			    	tmp +="<div class='conceptDescription' title='Click to focus on' onClick='com.erdas.smaad.selectConceptByUri(" + uris +")'>";
